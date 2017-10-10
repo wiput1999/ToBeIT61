@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'homeController@getHome');
+
+Route::get('/login', 'Backend\loginController@getLogin');
