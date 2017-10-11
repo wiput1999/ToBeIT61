@@ -8,15 +8,17 @@
 
     <title>Admin Panel | ToBeIT'61</title>
 
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/backend.css') }}">
 </head>
 <body>
-@include('layouts.nav')
-@yield('content')
+    Disabled!
 
-<script src="{{ mix('/js/jquery.min.js') }}"></script>
-<script src="{{ mix('/js/popper.min.js') }}"></script>
-<script src="{{ mix('/js/bootstrap.min.js') }}"></script>
-<script src="{{ mix('/js/app.js') }}"></script>
+    <div class="fixed-bottom">
+        <p id="login-footer">&copy; 2017 | ToBeIT'61</p>
+    </div>
+
+    <script src="{{ mix('/js/jquery.min.js') }}"></script>
+    <script src="{{ mix('/js/popper.min.js') }}"></script>
+    <script src="{{ mix('/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

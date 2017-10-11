@@ -1,4 +1,4 @@
-version: "3"
+version: "3.1"
 
 services:
   mysql:
@@ -6,15 +6,16 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: ToBeIT#2017
-      MYSQL_USER: web
-      MYSQL_PASSWORD: ToBeIT#2017
-  tobeit:
-    image: tobeit
-    depends_on:
-      - mysql
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./application:/var/www/html
+      MYSQL_ROOT_PASSWORD: "ToBeIT#2017"
+      MYSQL_DATABASE: tobeit61
+      MYSQL_USER: tobeit
+      MYSQL_PASSWRD: "ToBeIT#2017"
+  # tobeit:
+  #   image: tobeit
+  #   depends_on:
+  #     - mysql
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./application:/var/www/html

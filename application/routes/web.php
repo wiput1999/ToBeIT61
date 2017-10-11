@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', 'homeController@getHome');
+Route::get('/', 'indexController@getIndex');
 
-Route::get('/login', 'Backend\loginController@getLogin');
+//Default Authentication Routes
+Auth::routes();
+
+Route::get('/logout', 'homeController@logout');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/backend/dashboard', 'dashboardController@getDashboard')->name('dashboard');
+});
