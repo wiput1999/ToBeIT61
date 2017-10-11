@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'indexController@getIndex');
+Route::get('/', 'LandingController@index')->name('landing');
 
 //Default Authentication Routes
 Auth::routes();

@@ -1,0 +1,51 @@
+/*
+Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.
+       Load path: D:/xampp/htdocs/kmitl/ToBeIT61/resources/assets/sass
+        on line 9 of D:\xampp\htdocs\kmitl\ToBeIT61\resources\assets\sass\app.scss
+
+4: 
+5: // Variables
+6: @import "variables";
+7: 
+8: // Bootstrap
+9: @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+Backtrace:
+D:\xampp\htdocs\kmitl\ToBeIT61\resources\assets\sass\app.scss:9
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:400:in `run'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+D:/Data/Programs/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+D:/Data/Programs/Koala/bin/sass:18:in `load'
+D:/Data/Programs/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A        Load path: D:/xampp/htdocs/kmitl/ToBeIT61/resources/assets/sass\A         on line 9 of D:\xampp\htdocs\kmitl\ToBeIT61\resources\assets\sass\app.scss\A \A 4: \A 5: // Variables\A 6: @import \"variables\";\A 7: \A 8: // Bootstrap\A 9: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";"; }

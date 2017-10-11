@@ -1,0 +1,440 @@
+@import '_media';
+@import '_colors';
+@import '_webkit';
+#mb {
+    display: none;
+}
+#pc {
+    display: block;
+}
+
+// 88                                             88  88
+// 88                                             88  ""
+// 88                                             88
+// 88           ,adPPYYba,  8b,dPPYba,    ,adPPYb,88  88  8b,dPPYba,    ,adPPYb,d8
+// 88           ""     `Y8  88P'   `"8a  a8"    `Y88  88  88P'   `"8a  a8"    `Y88
+// 88           ,adPPPPP88  88       88  8b       88  88  88       88  8b       88
+// 88           88,    ,88  88       88  "8a,   ,d88  88  88       88  "8a,   ,d88
+// 88888888888  `"8bbdP"Y8  88       88   `"8bbdP"Y8  88  88       88   `"YbbdP"Y8
+//                                                                      aa,    ,88
+//                                                                       "Y8bbdP"
+.landing {
+    margin-left: 149px;
+    background-image: url('../image/bg.png');
+    background-size: cover;
+    height: 100%;
+    font-size: 25px;
+    color: #f2f2f2;
+
+    .head {
+        font-weight: bold;
+        color: $red1;
+        font-size: 30px;
+    }
+
+    // 88
+    // 88                                                                ,d
+    // 88                                                                88
+    // 88           ,adPPYYba,  8b       d8   ,adPPYba,   88       88  MM88MMM
+    // 88           ""     `Y8  `8b     d8'  a8"     "8a  88       88    88
+    // 88           ,adPPPPP88   `8b   d8'   8b       d8  88       88    88
+    // 88           88,    ,88    `8b,d8'    "8a,   ,a8"  "8a,   ,a88    88,
+    // 88888888888  `"8bbdP"Y8      Y88'      `"YbbdP"'    `"YbbdP'Y8    "Y888
+    //                              d8'
+    //                             d8'
+    .layout-box {
+        padding: 5% 5% 10% 5%;
+        .layout-title {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 10px 5px 5px 5px;
+            background: $green1;
+            box-shadow: 0 5px 1px 0 #2c7554;
+            text-align: center;
+            font-size: 30px;
+        }
+        .layout-content {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 20px 10px 10px 10px;
+            border: 2px solid $green1;
+
+            .textbox {
+                text-indent: 50px;
+                line-height: 1.8;
+            }
+
+            // Form & Table
+            table {
+                width: 100%;
+                border-collapse:collapse;
+            }
+            .schedule {
+                td {
+                    padding: 5px;
+                    vertical-align: top;
+                }
+                td:first-child {width: 25%;}
+                td:last-child {width: 75%;}
+            }
+
+            .download {
+                display: block;
+                padding: 10px 10px 5px 10px;
+                color: $white1;
+                background: linear-gradient($purple1, $purple2);
+                font-size: 25px;
+                border-radius: 5px;
+                @include transition(opacity, 0.3s);
+            }
+            .download:hover {
+                opacity: 0.5;
+            }
+        }
+        .layout-footer {
+            text-align: center;
+        }
+    }
+
+
+    .fixed img{
+        width: 15%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+
+    // 88        88
+    // 88        88
+    // 88        88
+    // 88aaaaaaaa88   ,adPPYba,   88,dPYba,,adPYba,    ,adPPYba,
+    // 88""""""""88  a8"     "8a  88P'   "88"    "8a  a8P_____88
+    // 88        88  8b       d8  88      88      88  8PP"""""""
+    // 88        88  "8a,   ,a8"  88      88      88  "8b,   ,aa
+    // 88        88   `"YbbdP"'   88      88      88   `"Ybbd8"'
+    ._home {
+        background-image: url('../image/home_bg.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+        img {
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+        }
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 170px;
+            color: #f2f2f2;
+            overflow: hidden;
+            span {
+                position: absolute;
+                top: 150px;
+                right: 0;
+                font-size: 50px;
+            }
+        }
+    }
+
+
+
+
+    //        db         88
+    //       d88b        88                                       ,d
+    //      d8'`8b       88                                       88
+    //     d8'  `8b      88,dPPYba,    ,adPPYba,   88       88  MM88MMM
+    //    d8YaaaaY8b     88P'    "8a  a8"     "8a  88       88    88
+    //   d8""""""""8b    88       d8  8b       d8  88       88    88
+    //  d8'        `8b   88b,   ,a8"  "8a,   ,a8"  "8a,   ,a88    88,
+    // d8'          `8b  8Y"Ybbd8"'    `"YbbdP"'    `"YbbdP'Y8    "Y888
+    ._about {
+        position: relative;
+        //background: $red2;
+        .texture img{
+            width: 15%;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }
+    }
+
+
+
+
+    //  ad88888ba               88                                88               88
+    // d8"     "8b              88                                88               88
+    // Y8,                      88                                88               88
+    // `Y8aaaaa,     ,adPPYba,  88,dPPYba,    ,adPPYba,   ,adPPYb,88  88       88  88   ,adPPYba,
+    //   `"""""8b,  a8"     ""  88P'    "8a  a8P_____88  a8"    `Y88  88       88  88  a8P_____88
+    //         `8b  8b          88       88  8PP"""""""  8b       88  88       88  88  8PP"""""""
+    // Y8a     a8P  "8a,   ,aa  88       88  "8b,   ,aa  "8a,   ,d88  "8a,   ,a88  88  "8b,   ,aa
+    //  "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"'
+    ._schedule {
+        position: relative;
+        .texture img{
+            width: 15%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+        }
+    }
+
+
+
+
+    //   ,ad8888ba,
+    //  d8"'    `"8b
+    // d8'
+    // 88              ,adPPYba,   88       88  8b,dPPYba,  ,adPPYba,   ,adPPYba,
+    // 88             a8"     "8a  88       88  88P'   "Y8  I8[    ""  a8P_____88
+    // Y8,            8b       d8  88       88  88           `"Y8ba,   8PP"""""""
+    //  Y8a.    .a8P  "8a,   ,a8"  "8a,   ,a88  88          aa    ]8I  "8b,   ,aa
+    //   `"Y8888Y"'    `"YbbdP"'    `"YbbdP'Y8  88          `"YbbdP"'   `"Ybbd8"'
+    ._course {
+        position: relative;
+        .texture img{
+            width: 30%;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .layout-content {
+            table {
+                tr:first-child td {
+                    text-align: center;
+                }
+                td {
+                    padding: 2%;
+                    width: 48%;
+                    vertical-align: top;
+                }
+                img {
+                    width: 50%;
+                    height: auto;
+                    @include transition (transform, 0.8s);
+                }
+                img:hover {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+
+
+
+    // /*
+    //
+    // 88888888ba   88
+    // 88      "8b  88                         ,d
+    // 88      ,8P  88                         88
+    // 88aaaaaa8P'  88,dPPYba,    ,adPPYba,  MM88MMM  ,adPPYba,
+    // 88""""""'    88P'    "8a  a8"     "8a   88    a8"     "8a
+    // 88           88       88  8b       d8   88    8b       d8
+    // 88           88       88  "8a,   ,a8"   88,   "8a,   ,a8"
+    // 88           88       88   `"YbbdP"'    "Y888  `"YbbdP"'
+    // */
+    //
+    ._photos {
+        .slider {
+            width: 100%;
+
+            .slider-wrap {
+                width: 100%;
+                position: relative;
+                float: left;
+
+                img {
+                    display: none;
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .arrow {
+                    i {
+                        position: absolute;
+                        font-size: 100px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        padding: 10px;
+                        cursor: pointer;
+                        @include transition(opacity, 0.3s);
+                    }
+                    i:last-child {
+                        right: 0;
+                    }
+                    i:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .active {
+            display: block !important;
+        }
+    }
+
+
+
+    // /*
+    //
+    // 88888888888  db         ,ad8888ba,
+    // 88          d88b       d8"'    `"8b
+    // 88         d8'`8b     d8'        `8b
+    // 88aaaaa   d8'  `8b    88          88
+    // 88"""""  d8YaaaaY8b   88          88
+    // 88      d8""""""""8b  Y8,    "88,,8P
+    // 88     d8'        `8b  Y8a.    Y88P
+    // 88    d8'          `8b  `"Y8888Y"Y8a
+    // */
+    //
+    ._faq {
+        p:first-child {
+            color: #000;
+        }
+    }
+}
+
+// /*
+//
+// 888888888888         88           88
+//      88              88           88                ,d
+//      88              88           88                88
+//      88  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
+//      88  ""     `Y8  88P'    "8a  88  a8P_____88    88
+//      88  ,adPPPPP88  88       d8  88  8PP"""""""    88
+//      88  88,    ,88  88b,   ,a8"  88  "8b,   ,aa    88,
+//      88  `"8bbdP"Y8  8Y"Ybbd8"'   88   `"Ybbd8"'    "Y888
+// */
+//
+
+@media #{$table} {
+    #pc {
+        display: none;
+    }
+    #mb {
+        display: block;
+    }
+    .landing {
+        margin-left: 60px;
+
+        // Layout
+        .layout-box {
+            .layout-title {
+                font-size: 55px;
+            }
+            .layout-content {
+                .textbox {
+                    font-size: 50px;
+                    text-indent: 50px;
+                    line-height: 1.5;
+                }
+                .schedule {
+                    hr.disable{
+                        display: none;
+                    }
+                    tr {
+                        padding: 10px 0 10px 0;
+                    }
+                }
+            }
+        }
+
+
+        ._home {
+            .texture img {
+                width: 50%;
+            }
+            .box {
+                font-size: 200px;
+                span {
+                    top: 170px;
+                    font-size: 70px;
+                }
+            }
+        }
+
+        ._course {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+
+// /*
+//
+// 88888888ba   88
+// 88      "8b  88
+// 88      ,8P  88
+// 88aaaaaa8P'  88,dPPYba,    ,adPPYba,   8b,dPPYba,    ,adPPYba,
+// 88""""""'    88P'    "8a  a8"     "8a  88P'   `"8a  a8P_____88
+// 88           88       88  8b       d8  88       88  8PP"""""""
+// 88           88       88  "8a,   ,a8"  88       88  "8b,   ,aa
+// 88           88       88   `"YbbdP"'   88       88   `"Ybbd8"'
+// */
+//
+
+@media #{$smartphone} {
+    .texture, .fixed {
+        display: none;
+    }
+    .landing {
+        margin-left: 60px;
+
+        // Layout
+        .layout-box {
+            .layout-title {
+                font-size: 32px;
+            }
+            .layout-content {
+                .textbox {
+                    font-size: 23px;
+                    text-indent: 15px;
+                    line-height: 1.2;
+                }
+
+                .schedule {
+                    td {
+                        padding: 5px;
+                    }
+                    font-size: 23px;
+                }
+            }
+        }
+
+
+        ._home {
+            .box {
+                font-size: 75px;
+                span {
+                    top: 70px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        ._photos {
+            .slider img {
+                height: 300px !important;
+            }
+            i {
+                font-size: 50px !important;
+            }
+        }
+    }
+}

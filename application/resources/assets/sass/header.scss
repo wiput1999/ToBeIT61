@@ -1,0 +1,79 @@
+// /*
+//
+// 88        88                                   88
+// 88        88                                   88
+// 88        88                                   88
+// 88aaaaaaaa88   ,adPPYba,  ,adPPYYba,   ,adPPYb,88   ,adPPYba,  8b,dPPYba,
+// 88""""""""88  a8P_____88  ""     `Y8  a8"    `Y88  a8P_____88  88P'   "Y8
+// 88        88  8PP"""""""  ,adPPPPP88  8b       88  8PP"""""""  88
+// 88        88  "8b,   ,aa  88,    ,88  "8a,   ,d88  "8b,   ,aa  88
+// 88        88   `"Ybbd8"'  `"8bbdP"Y8   `"8bbdP"Y8   `"Ybbd8"'  88
+// */
+//
+
+@import '_media';
+@import '_webkit';
+.header {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #291529;
+
+    .texture {
+        img {
+            height: 7%;
+            width: 150px;
+            position: fixed;
+            z-index: 5;
+        }
+        img:nth-child(2) {
+            bottom: 0;
+        }
+
+    }
+
+    table {
+        border-collapse:collapse;
+        height: 100%;
+
+        td {
+            i {
+                font-size: 18px;
+                color: #1f8f63;
+                font-weight: bold;
+            }
+            a {
+                display: block;
+                font-size: 19.5px;
+                padding: 15px;
+                color: #f2f2f2;
+                @include transition(opacity, 0.3s);
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+            a:active {
+                color: #a80037;
+            }
+
+        }
+
+        td:nth-child(2) {
+            width: 7px;
+            background: #a80037;
+        }
+        td:nth-child(3) {
+            width: 3px;
+            background: #d94879;
+        }
+    }
+}
+
+@media #{$table} {
+    .header td span {
+        display: none;
+    }
+    .texture {
+        display: none;
+    }
+}
