@@ -12266,6 +12266,10 @@ a.text-dark:hover {
   padding: 0px;
 }
 
+#profile-form-row {
+  margin-bottom: 20px;
+}
+
 .pagination li:first-child a {
   margin-left: 0;
   border-top-left-radius: 0.25rem;

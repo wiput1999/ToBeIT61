@@ -30,4 +30,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/backend/check/sunday/{id}', 'dashboardController@doCheckSunday');
 
     Route::get('/backend/profile/{id}', 'dashboardController@getProfile');
+
+    Route::get('/backend/edit/{id}', 'dashboardController@getEdit');
+
+    Route::post('/backend/edit/{id}', 'dashboardController@doEdit');
+
+    Route::delete('/backend/profile/{id}', 'dashboardController@doDelete');
 });
