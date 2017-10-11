@@ -24,4 +24,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/backend/dashboard', 'dashboardController@getDashboard')->name('dashboard');
 
     Route::get('/backend/list/{id}', 'dashboardController@getList');
+
+    Route::post('/backend/check/saturday/{id}', 'dashboardController@doCheckSaturday');
+
+    Route::post('/backend/check/sunday/{id}', 'dashboardController@doCheckSunday');
+
+    Route::get('/backend/profile/{id}', 'dashboardController@getProfile');
 });

@@ -12258,6 +12258,14 @@ a.text-dark:hover {
   margin-top: 70px;
 }
 
+#check-button {
+  padding: 0px;
+}
+
+#register {
+  padding: 0px;
+}
+
 .pagination li:first-child a {
   margin-left: 0;
   border-top-left-radius: 0.25rem;
