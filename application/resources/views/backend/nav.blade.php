@@ -5,17 +5,17 @@
     </button>
     <div class="collapse navbar-collapse" id="mainnav">
         <ul class="navbar-nav">
-            <li class="nav-item {{ route('dashboard') ? 'active':'' }}">
+            <li class="nav-item {{ \Request::is('backend/dashboard') ? 'active':'' }}">
                 <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Round 1</a>
+            <li class="nav-item {{ \Request::is('backend/list/1') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/list/1') }}">Round 1</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Round 2</a>
+            <li class="nav-item {{ \Request::is('backend/list/2') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/list/2') }}">Round 2</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Round 3</a>
+            <li class="nav-item {{ \Request::is('backend/list/3') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/list/3') }}">Round 3</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

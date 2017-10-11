@@ -22,4 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/backend/dashboard', 'dashboardController@getDashboard')->name('dashboard');
+
+    Route::get('/backend/list/{id}', 'dashboardController@getList');
 });

@@ -24,5 +24,7 @@
     <script src="{{ mix('/js/jquery.min.js') }}"></script>
     <script src="{{ mix('/js/popper.min.js') }}"></script>
     <script src="{{ mix('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ mix('/js/list.min.js') }}"></script>
+    @yield('script')
 </body>
 </html>
