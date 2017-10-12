@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'LandingController@index')->name('landing');
+Route::get('/signup', 'SignupController@index')->name('signup');
 
 //Default Authentication Routes
 Auth::routes();

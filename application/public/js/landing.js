@@ -1,6 +1,6 @@
 $(window).on('load resize', function(){
     height = $(window).height();
-    $('.landing .section').css('min-height', height);
+    $('.section').css('min-height', height);
 
 
 });

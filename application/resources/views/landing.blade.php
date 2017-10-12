@@ -36,7 +36,7 @@
 
         <div class="_home section" id="home">
             {{HTML::image('image/home_logo.png')}}
-            <div class="box Alice">
+            <div class="box Alice" style="overflow:visible;">
                 ToBe<font color="3998f1">IT</font>61<br />
                 <span class="AengAei">At KMITL</span>
             </div>
@@ -95,38 +95,71 @@
             <div class="layout-box">
                 {{-- กิจกรรม --}}
                 <div class="layout-title">
-                    <span class="head">SCHEDULE</span> | กำหนดการ
+                    <span class="head">SCHEDULE</span> | กำหนดการกิจกรรม
                 </div>
-                <div class="layout-content" style="width: 100%:">
-                    <table class="schedule">
-                        <tr>
-                            <td>วันเวลา <hr class="small"/></td>
-                            <td>กิจกรรม <hr class="small"/></td>
-                        </tr>
-                        <tr>
-                            <td>26 ธันวาคม 2558 <hr class="small disable"/></td>
-                            <td>เปิดการลงทะเบียนกิจกรรม ToBeIT59 โดยสามารถลงทะเบียนได้ที่ลิงค์นี้เลย ลงทะเบียน <hr class="small"/></td>
-                        </tr>
-                        <tr>
-                            <td>15 มกราคม 2559 <hr class="small disable"/></td>
-                            <td>ปิดการลงลงทะเบียนกิจกรรม ToBeIT59 <hr class="small"/></td>
-                        </tr>
-                        <tr>
-                            <td>16 มกราคม 2559 <hr class="small disable"/></td>
-                            <td>เปิดติว ToBeIT59 วันเเรก <hr class="small"/></td>
-                        </tr>
-                        <tr>
-                            <td>30 มกราคม 2559 <hr class="small disable"/></td>
-                            <td>สอบ Quiz <hr class="small"/></td>
-                        </tr>
-                        <tr>
-                            <td>31 มกราคม 2559 <hr class="hr2 small disable"/></td>
-                            <td>ติว ToBeIT59 วันสุดท้าย <hr class="hr2 small"/></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">*เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา</td>
-                        </tr>
-                    </table>
+                <div class="layout-content schedule">
+                    <div class="row">
+                        <div class="col col-5">
+                            <strong>วันเวลา</strong> <hr class="small"/>
+                        </div>
+                        <div class="col col-7">
+                            <strong>กิจกรรม</strong> <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            26 ธันวาคม 2558
+                        </div>
+                        <div class="col col-7">
+                            เปิดการลงทะเบียนกิจกรรม ToBeIT59 โดยสามารถลงทะเบียนได้ที่ลิงค์นี้เลย <a href="/signup">ลงทะเบียน</a> <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            15 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            ปิดการลงลงทะเบียนกิจกรรม ToBeIT59 <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            16 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            เปิดติว ToBeIT59 วันเเรก <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            30 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            สอบ Quiz <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            31 มกราคม 2559 <hr class="hr2 small"/>
+                        </div>
+                        <div class="col col-7">
+                            ติว ToBeIT59 วันสุดท้าย <hr class="hr2 small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="req">*</span> เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา
+                        </div>
+                    </div>
+
+
+                    <br /><hr class="radius"/>
                 </div>
 
 
@@ -134,71 +167,80 @@
 
                 {{-- วิชาเรียน --}}
                 <div class="layout-title">
-                    กำหนดการวิชาเรียน
+                    <span class="head">SCHEDULE</span> | กำหนดการวิชาเรียน
                 </div>
-                <div class="layout-content">
-                    <table class="schedule">
-                        <tr >
-                            <td>วันเวลา <hr class="small"/></td>
-                            <td>วิชาเรียน <hr class="small"/></td>
-                        </tr>
+                <div class="layout-content schedule">
+                    <div class="row">
+                        <div class="col col-5">
+                            <strong>วันเวลา</strong> <hr class="small"/>
+                        </div>
+                        <div class="col col-7">
+                            <strong>วิชาเรียน</strong> <hr class="small"/>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>26 ธันวาคม 2558</td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) </td>
-                        </tr>
-                        <tr>
-                            <td><p style="opacity: 0;">.</p><hr class="small disable"/></td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/></td>
-                        </tr>
+                    <div class="row">
+                        <div class="col col-5">
+                            26 ธันวาคม 2558
+                        </div>
+                        <div class="col col-7">
+                            Hardware (P’บอสแบ๊ะ, P’ฟรอย) <br />
+                            Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            17 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            Muti & Web (P’จาบอน, P’เบ็นซ์) <br />
+                            Network (P’กรณ์, P’เอิร์ธ) <hr class="small"/>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            23 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            Database (P’ชิน, P’โอปอ) <br />
+                            Programming (P’โอ๊ต, P’โอ๊ต) <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            24 มกราคม 2559
+                        </div>
+                        <div class="col col-7">
+                            Logic (P’แทท, P’เจม) <br />
+                            Algolithm & ปัญหาเชาว์ (P’จ๊าบ, P’ท็อป) <hr class="small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-5">
+                            30 มกราคม 2559 <br /><hr class="hr2 small"/>
+                        </div>
+                        <div class="col col-7">
+                            Math (P’แบงค์, P’กลอย) & Quiz<br />
+
+                            <hr class="hr2 small"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <br /><span class="req">*</span> เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา
+                        </div>
+                    </div>
 
 
-                        <tr>
-                            <td>26 ธันวาคม 2558</td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) </td>
-                        </tr>
-                        <tr>
-                            <td><p style="opacity: 0;">.</p><hr class="small disable"/></td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/></td>
-                        </tr>
-
-
-                        <tr>
-                            <td>26 ธันวาคม 2558</td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) </td>
-                        </tr>
-                        <tr>
-                            <td><p style="opacity: 0;">.</p><hr class="small disable"/></td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/></td>
-                        </tr>
-
-
-                        <tr>
-                            <td>26 ธันวาคม 2558</td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) </td>
-                        </tr>
-                        <tr>
-                            <td><p style="opacity: 0;">.</p><hr class="small disable"/></td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/></td>
-                        </tr>
-
-
-                        <tr>
-                            <td>26 ธันวาคม 2558</td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) </td>
-                        </tr>
-                        <tr>
-                            <td><p style="opacity: 0;">.</p></p><hr class="hr2 small disable"/></td>
-                            <td>Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="hr2 small"/></td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td colspan="2">*เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา</td>
-                        </tr>
-                    </table>
+                    <br /><hr class="radius"/>
                 </div>
+
                 <div class="layout-footer">
                     <br /><hr class="hr2 radius"/>
                 </div>
@@ -223,123 +265,83 @@
                 {{HTML::image('image/texture_03.png')}}
             </span>
 
-
-            <div class="layout-box" id="mb">
+            <div class="layout-box">
                 <div class="layout-title">
                     <span class="head">COURSE INFO </span>| รายละเอียดการสอน
                 </div>
-                <div class="layout-content" style="border:none;">
-                    <abbr title="Flow chart">
-                        {{HTML::image('image/course_01.png')}}
-                    </abbr>
-                    <div class="layout-title">
-                        Flow chart
-                    </div>
-                    <div class="layout-content">
-                        <p class="textbox">
+
+
+
+                <div class="row gutters">
+                    <div class="col col-6">
+
+                        <br />
+                        <div class="download">
+                            Flow chart
+                        </div>
+
+                        <br />
+                        <abbr title="Flow chart">
+                            {{HTML::image('image/course_01.png')}}
+                        </abbr>
+                        <br /><br /><hr  class="hr2 small"/><br/>
+
+                        <div class="textbox">
                             ในวิชา hardware น้องทุกคนจะได้เรียนเกี่ยวกับส่วนประกอบของคอมพิวเตอร์ว่าคอมพิวเตอร์ที่เราใช้นั้น มีส่วนประกอบอะไรบ้าง ทำงานยังไง แล้วส่วนประกอบส่วนไหนทำหน้าที่อะไร และทำงานกับส่วนอื่นส่วนไหนบ้าง น้องที่มาเรียนจะสามารถนำความรู้ที่พี่สอนนี้ไปใช้ในการใช้กับวิชาคอมพิวเตอร์พื้นฐานได้ และสามารถนำไปชำแหละคอมที่บ้านได้ (แต่ระวังประกอบกลับไม่ได้นะ ฮา)
+                            <br />
+                        </div>
+
+                        <div style="text-align: left; line-height: 1.8;">
+                            <br />
                             <hr  class="hr2 small"/><br/>
-                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา
-                            <br />- พี่บอส (P’BossWaran)
-                            <br />- พี่ฟรอย (P’Foy)
-                            <br/><br/><hr  class="hr2 small"/>
-                            <br /><a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
-                        </p>
+                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
+                            - พี่บอส (P’BossWaran) <br />
+                            - พี่ฟรอย (P’Foy) <br />
+                            <br/><hr  class="hr2 small"/>
+                        </div>
+
+                        <div>
+                            <a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
+                        </div>
+
+                        <br /><hr class="radius"/>
                     </div>
 
-                    <br /><hr class="radius"/><br/>
 
-                    <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
-                        {{HTML::image('image/course_02.png')}}
-                    </abbr>
-                    <div class="layout-title">
-                        คิดวิเคราะห์ เชิงประยุกค์
-                    </div>
-                    <div class="layout-content">
-                        <p class="textbox">
+                    <div class="col col-6">
+
+                        <br />
+                        <div class="download">
+                            คิดวิเคราะห์ เชิงประยุกค์
+                        </div>
+
+                        <br />
+                        <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
+                            {{HTML::image('image/course_02.png')}}
+                        </abbr>
+                        <br /><br /><hr  class="hr2 small"/><br/>
+
+
+                        <div class="textbox">
                             ไม่รู้ว่าน้องๆเคยสังเกตหรือเปล่าว่า โปรแกรมที่น้องๆกำลังใช้งานอยู่นี้ มันคือซอฟต์แวร์ประเภทไหน ก่อนจะได้มาซึ่งซอฟต์แวร์นั้น ต้องผ่านกระบวนการอะไรมาก่อนบ้าง ถึงออกมาเป็นซอฟต์แวร์ให้เราใช้กัน สำหรับวิชา Software นี้ น้องๆจะได้รู้ถึงการได้มาของซอฟต์แวร์ และ ซอฟต์แวร์ประเภทต่างๆ รวมทั้งเรื่องลิขสิทธิ์ของซอฟต์แวร์นอกจากนี้ในปัจจุบัน การใช้เทคโนโลยีนั้นยิ่งเปิดกว้างมากขึ้น มีผู้คนเข้าถึงได้มากยิ่งขึ้น มีความเจริญมากยิ่งขึ้น แต่สิ่งที่ตามมาคือ ผู้คนที่ขาดหลักธรรม ขาดจิตสำนึกในการใช้เทคโนโลยี ย่อมเกิดปัญหาให้แก่ผู้คนทั่วไป วิชา Ethics นี้จะมาพูดถึงกฏและข้อระเบียบต่างๆในการใช้เทคโนโลยี อาชญากรรมคอมพิวเตอร์ และวิธีการรักษาคอมพิวเตอร์ของน้องๆให้ปลอดภัยจากสิ่งเหล่านั้น รับรองว่าพี่ๆทำให้มันเข้าใจง่ายไม่ซับซ้อนแน่นอน แล้วมาติว TobeIT'59 กันเยอะๆเลยน้าา
+                            <br />
+                        </div>
+
+                        <div style="text-align: left; line-height: 1.8;">
+                            <br />
                             <hr  class="hr2 small"/><br/>
-                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา
-                            <br />- พี่เจเจ (P’JayJay)
-                            <br />- พี่ดิว (P’Dew)
-                            <br /><br/><hr  class="hr2 small"/>
-                            <br/><a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
-                        </p>
+                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
+                            - พี่เจเจ (P’JayJay) <br />
+                            - พี่ดิว (P’Dew) <br />
+                            <br /><hr class="hr2 small"/>
+                        </div>
+
+                        <div>
+                            <a href="#download2" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
+                        </div>
+
+                        <br /><hr class="radius"/>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="layout-box" id="pc">
-                <div class="layout-title">
-                    COURSE INFO | รายละเอียดการสอน
-                </div>
-                <div class="layout-content" style="border:none;">
-                    <center>
-                        <table>
-
-
-                            <tr>
-                                <td>
-                                    <abbr title="Flow chart">
-                                        {{HTML::image('image/course_01.png')}}
-                                    </abbr>
-                                </td>
-                                <td>
-                                    <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
-                                        {{HTML::image('image/course_02.png')}}
-                                    </abbr>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <div class="layout-title">
-                                        Flow chart
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="layout-title">
-                                        คิดวิเคราะห์ เชิงประยุกค์
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <div class="layout-content">
-                                        <p class="textbox">
-                                            ในวิชา hardware น้องทุกคนจะได้เรียนเกี่ยวกับส่วนประกอบของคอมพิวเตอร์ว่าคอมพิวเตอร์ที่เราใช้นั้น มีส่วนประกอบอะไรบ้าง ทำงานยังไง แล้วส่วนประกอบส่วนไหนทำหน้าที่อะไร และทำงานกับส่วนอื่นส่วนไหนบ้าง น้องที่มาเรียนจะสามารถนำความรู้ที่พี่สอนนี้ไปใช้ในการใช้กับวิชาคอมพิวเตอร์พื้นฐานได้ และสามารถนำไปชำแหละคอมที่บ้านได้ (แต่ระวังประกอบกลับไม่ได้นะ ฮา)
-                                            <hr  class="hr2 small"/><br/>
-                                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา
-                                            <br />- พี่บอส (P’BossWaran)
-                                            <br />- พี่ฟรอย (P’Foy)
-                                            <br/><br/><hr  class="hr2 small"/>
-                                            <br /><a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
-                                        </p>
-                                    </div>
-                                </td>
-
-                                <td>
-                                    <div class="layout-content">
-                                        <p class="textbox">
-                                            ไม่รู้ว่าน้องๆเคยสังเกตหรือเปล่าว่า โปรแกรมที่น้องๆกำลังใช้งานอยู่นี้ มันคือซอฟต์แวร์ประเภทไหน ก่อนจะได้มาซึ่งซอฟต์แวร์นั้น ต้องผ่านกระบวนการอะไรมาก่อนบ้าง ถึงออกมาเป็นซอฟต์แวร์ให้เราใช้กัน สำหรับวิชา Software นี้ น้องๆจะได้รู้ถึงการได้มาของซอฟต์แวร์ และ ซอฟต์แวร์ประเภทต่างๆ รวมทั้งเรื่องลิขสิทธิ์ของซอฟต์แวร์นอกจากนี้ในปัจจุบัน การใช้เทคโนโลยีนั้นยิ่งเปิดกว้างมากขึ้น มีผู้คนเข้าถึงได้มากยิ่งขึ้น มีความเจริญมากยิ่งขึ้น แต่สิ่งที่ตามมาคือ ผู้คนที่ขาดหลักธรรม ขาดจิตสำนึกในการใช้เทคโนโลยี ย่อมเกิดปัญหาให้แก่ผู้คนทั่วไป วิชา Ethics นี้จะมาพูดถึงกฏและข้อระเบียบต่างๆในการใช้เทคโนโลยี อาชญากรรมคอมพิวเตอร์ และวิธีการรักษาคอมพิวเตอร์ของน้องๆให้ปลอดภัยจากสิ่งเหล่านั้น รับรองว่าพี่ๆทำให้มันเข้าใจง่ายไม่ซับซ้อนแน่นอน แล้วมาติว TobeIT'59 กันเยอะๆเลยน้าา
-                                            <hr  class="hr2 small"/><br/>
-                                            <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา
-                                            <br />- พี่เจเจ (P’JayJay)
-                                            <br />- พี่ดิว (P’Dew)
-                                            <br /><br/><hr  class="hr2 small"/>
-                                            <br/><a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
-                                        </p>
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                        </table>
-                    </center>
                 </div>
             </div>
         </div>
@@ -376,6 +378,8 @@
                         </div>
                     </div>
 
+                    <br />
+
                     <div class="layout-title" style="text-align:left; padding: 10px;">
                         <i class="fa fa-bus" aria-hidden="true"></i> VAN
                     </div>
@@ -384,6 +388,8 @@
                             รถตู้โดยสารปรับอากาศ หมอชิตใหม่-อนุสาวรีย์–พระจอมเกล้าลาดกระบัง(ทางด่วน) ขึ้นรถบริเวณใต้ทางด่วนทางทิศเหนือของอนุสาวรีย์ชัยสมรภูมิ ค่าโดยสาร 40 บาท ใช้เวลาประมาณ 30-40 นาที
                         </div>
                     </div>
+
+                    <br />
 
                     <div class="layout-title" style="text-align:left; padding: 10px;">
                         <i class="fa fa-car" aria-hidden="true"></i> CAR
@@ -418,6 +424,8 @@
                             </ul>
                         </div>
                     </div>
+
+                    <br />
 
                     <div class="layout-title" style="text-align:left; padding: 10px;">
                         <i class="fa fa-train" aria-hidden="true"></i> TRAIN
@@ -546,24 +554,19 @@
         	 --}}
         <div class="_footer">
             <div class="layout-box">
-                <div class="layout-title">
-                    ติดต่อสอบถาม
-                </div>
-                <div class="layout-content">
-                        เบอร์ติดต่อ <br />
-                        <i class="fa fa-phone" aria-hidden="true"></i> พี่มิลค์กี้: 085 - 161 - 7623 <br />
-                        <i class="fa fa-phone" aria-hidden="true"></i> พี่แพร: 082 - 792 - 0845 <br />
 
-                        <hr class="hr2 radius small"/>
-
-                        <i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook <br />
-                        <i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook <br />
-                        <i class="fa fa-weixin" aria-hidden="true"></i> ส่งข้อความผ่าน Facebook <br />
-
-                        <hr class="hr2 radius small"/>
+                <div class="row around">
+                    <div class="col" style="text-align: left; line-height: 1.8;">
+                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่มิลค์กี้: 085 - 161 - 7623 <br />
+                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่แพร: 082 - 792 - 0845 <br />
+                    </div>
+                    <div class="col" style="text-align: left; line-height: 1.8;">
+                        <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook</a> <br />
+                        <a href="#"><i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook</a> <br />
+                        <a href="#"><i class="fa fa-weixin" aria-hidden="true"></i> ส่งข้อความผ่าน Facebook</a> <br />
+                    </div>
                 </div>
             </div>
         </div>
-        <hr />
     </div>
 @endsection

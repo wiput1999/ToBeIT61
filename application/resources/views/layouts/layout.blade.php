@@ -23,6 +23,8 @@
         {{ HTML::style('css/layout.min.css') }}
         {{ HTML::style('css/header.min.css') }}
         {{ HTML::style('css/landing.min.css') }}
+        {{ HTML::style('css/signup.min.css') }}
+        {{ HTML::style('kube/dist/css/kube.css') }}
 
         <!-- Js -->
         {{ HTML::script('js/jquery.js') }}
@@ -30,9 +32,9 @@
         {{ HTML::script('js/layout.js') }}
         {{ HTML::script('js/landing.js') }}
         {{ HTML::script('js/scroll.js') }}
+        {{ HTML::script('kube/dist/js/kube.min.js') }}
 
-        <!-- Grider -->
-        {{ HTML::script('js/jquery.gridder.js') }}
+
 
 
     </head>
@@ -43,5 +45,7 @@
             @yield('content')
         </div>
         @include('layouts._footer')
+
+
     </body>
 </html>

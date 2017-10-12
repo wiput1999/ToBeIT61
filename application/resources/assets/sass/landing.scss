@@ -8,6 +8,79 @@
     display: block;
 }
 
+
+// 88
+// 88                                                                ,d
+// 88                                                                88
+// 88           ,adPPYYba,  8b       d8   ,adPPYba,   88       88  MM88MMM
+// 88           ""     `Y8  `8b     d8'  a8"     "8a  88       88    88
+// 88           ,adPPPPP88   `8b   d8'   8b       d8  88       88    88
+// 88           88,    ,88    `8b,d8'    "8a,   ,a8"  "8a,   ,a88    88,
+// 88888888888  `"8bbdP"Y8      Y88'      `"YbbdP"'    `"YbbdP'Y8    "Y888
+//                              d8'
+//
+.textbox {
+    text-align: left;
+    text-indent: 30px;
+    line-height: 1.8;
+}
+.download {
+    display: block;
+    padding: 15px;
+    color: $white1;
+    background: $black1;
+    font-size: 25px;
+    @include transition(opacity, 0.3s);
+}
+a.download:hover {
+    color: $white1;
+    opacity: 0.7;
+}
+
+
+.layout-box {
+    padding: 5% 5% 10% 5%;
+    .layout-title {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        // padding: 10px 5px 5px 5px;
+        // box-shadow: 0 5px 1px 0 #2c7554;
+        padding: 15px 10px 10px 10px;
+        background: $green1;
+        text-align: center;
+        font-size: 30px;
+    }
+    .layout-content {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 20px 10px 10px 10px;
+        border: 2px solid $green1;
+
+        .textbox {
+            text-indent: 50px;
+            line-height: 1.8;
+        }
+
+        // Form & Table
+        table {
+            width: 100%;
+            border-collapse:collapse;
+        }
+        .schedule {
+            td {
+                padding: 5px;
+                vertical-align: top;
+            }
+            td:first-child {width: 25%;}
+            td:last-child {width: 75%;}
+        }
+
+
+    }
+}
+
+
+
 // 88                                             88  88
 // 88                                             88  ""
 // 88                                             88
@@ -23,79 +96,13 @@
     background-image: url('../image/bg.png');
     background-size: cover;
     height: 100%;
-    font-size: 25px;
+    font-size: 23px;
     color: #f2f2f2;
 
     .head {
         font-weight: bold;
-        color: $red1;
         font-size: 30px;
     }
-
-    // 88
-    // 88                                                                ,d
-    // 88                                                                88
-    // 88           ,adPPYYba,  8b       d8   ,adPPYba,   88       88  MM88MMM
-    // 88           ""     `Y8  `8b     d8'  a8"     "8a  88       88    88
-    // 88           ,adPPPPP88   `8b   d8'   8b       d8  88       88    88
-    // 88           88,    ,88    `8b,d8'    "8a,   ,a8"  "8a,   ,a88    88,
-    // 88888888888  `"8bbdP"Y8      Y88'      `"YbbdP"'    `"YbbdP'Y8    "Y888
-    //                              d8'
-    //                             d8'
-    .layout-box {
-        padding: 5% 5% 10% 5%;
-        .layout-title {
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            padding: 10px 5px 5px 5px;
-            background: $green1;
-            box-shadow: 0 5px 1px 0 #2c7554;
-            text-align: center;
-            font-size: 30px;
-        }
-        .layout-content {
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            padding: 20px 10px 10px 10px;
-            border: 2px solid $green1;
-
-            .textbox {
-                text-indent: 50px;
-                line-height: 1.8;
-            }
-
-            // Form & Table
-            table {
-                width: 100%;
-                border-collapse:collapse;
-            }
-            .schedule {
-                td {
-                    padding: 5px;
-                    vertical-align: top;
-                }
-                td:first-child {width: 25%;}
-                td:last-child {width: 75%;}
-            }
-
-            .download {
-                display: block;
-                padding: 10px 10px 5px 10px;
-                color: $white1;
-                background: linear-gradient($purple1, $purple2);
-                font-size: 25px;
-                border-radius: 5px;
-                @include transition(opacity, 0.3s);
-            }
-            .download:hover {
-                opacity: 0.5;
-            }
-        }
-        .layout-footer {
-            text-align: center;
-        }
-    }
-
 
     .fixed img{
         width: 15%;
@@ -115,11 +122,13 @@
     // 88        88  "8a,   ,a8"  88      88      88  "8b,   ,aa
     // 88        88   `"YbbdP"'   88      88      88   `"Ybbd8"'
     ._home {
+        min-height: 500px;
         background-image: url('../image/home_bg.jpg');
         background-position: center;
         background-size: cover;
         position: relative;
         text-align: center;
+        transition: min-height 0.3s;
         img {
             width: 30%;
             position: absolute;
@@ -158,7 +167,7 @@
     // d8'          `8b  8Y"Ybbd8"'    `"YbbdP"'    `"YbbdP'Y8    "Y888
     ._about {
         position: relative;
-        //background: $red2;
+        font-size: 23px;
         .texture img{
             width: 15%;
             position: absolute;
@@ -180,12 +189,30 @@
     //  "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"'
     ._schedule {
         position: relative;
+        font-size: 23px;
         .texture img{
             width: 15%;
             position: absolute;
             bottom: 0;
             right: 0;
             z-index: 0;
+        }
+        .schedule {
+            .col {
+                padding: 5px;
+                line-height: 1.8;
+            }
+            hr {
+                margin: 5px 0 5px 0;
+            }
+        }
+    }
+    @media #{$smartphone} {
+        .schedule .row:not(:first-child) .col-5 {
+            color: $black1;
+            hr {
+                display: none;
+            }
         }
     }
 
@@ -203,34 +230,65 @@
     ._course {
         position: relative;
         .texture img{
-            width: 30%;
+            width: 20%;
             position: absolute;
             bottom: 0;
             z-index: 0;
         }
 
-        .layout-content {
-            table {
-                tr:first-child td {
-                    text-align: center;
-                }
-                td {
-                    padding: 2%;
-                    width: 48%;
-                    vertical-align: top;
-                }
-                img {
-                    width: 50%;
-                    height: auto;
-                    @include transition (transform, 0.8s);
-                }
-                img:hover {
-                    transform: rotateY(180deg);
-                }
+        .row {
+            font-size: 20px;
+            text-align: center;
+            img {
+                width: 50%;
+                height: auto;
+                @include transition (transform, 0.8s);
             }
+            img:hover {
+                transform: rotateY(180deg);
+            }
+
         }
+        // .layout-content {
+        //     table {
+        //         tr:first-child td {
+        //             text-align: center;
+        //         }
+        //         td {
+        //             padding: 2%;
+        //             width: 48%;
+        //             vertical-align: top;
+        //         }
+        //         img {
+        //             width: 50%;
+        //             height: auto;
+        //             @include transition (transform, 0.8s);
+        //         }
+        //         img:hover {
+        //             transform: rotateY(180deg);
+        //         }
+        //     }
+        // }
     }
 
+
+    // /*
+    //
+    // 888888888888
+    //      88                                                                               ,d
+    //      88                                                                               88
+    //      88  8b,dPPYba,  ,adPPYYba,  8b,dPPYba,   8b,dPPYba,    ,adPPYba,   8b,dPPYba,  MM88MMM
+    //      88  88P'   "Y8  ""     `Y8  88P'   `"8a  88P'    "8a  a8"     "8a  88P'   "Y8    88
+    //      88  88          ,adPPPPP88  88       88  88       d8  8b       d8  88            88
+    //      88  88          88,    ,88  88       88  88b,   ,a8"  "8a,   ,a8"  88            88,
+    //      88  88          `"8bbdP"Y8  88       88  88`YbbdP"'    `"YbbdP"'   88            "Y888
+    //                                               88
+    //                                               88
+    // */
+    //
+    ._transport {
+        font-size: 20px;
+    }
 
 
     // /*
@@ -300,7 +358,7 @@
     //
     ._faq {
         p:first-child {
-            color: #000;
+            // color: #000;
         }
     }
 }
