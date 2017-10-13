@@ -22,7 +22,7 @@
         <tr>
             <td>
                 <abbr title="ลงทะเบียน!">
-                    <a href="/signup" style="background: #e85a72;">
+                    <a href="{{ URL('/signup') }}" style="background: #e85a72;">
                         <i class="fa fa-id-card-o" aria-hidden="true" style="color: #181819;"></i>
                         <span >ลงทะเบียน!</span>
                     </a>
