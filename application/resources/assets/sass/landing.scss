@@ -28,7 +28,7 @@
     display: block;
     padding: 15px;
     color: $white1;
-    background: $black1;
+    background: $green1;
     font-size: 25px;
     @include transition(opacity, 0.3s);
 }
@@ -46,7 +46,7 @@ a.download:hover {
         // padding: 10px 5px 5px 5px;
         // box-shadow: 0 5px 1px 0 #2c7554;
         padding: 15px 10px 10px 10px;
-        background: $green1;
+        background: $black3;
         text-align: center;
         font-size: 30px;
     }
@@ -54,7 +54,7 @@ a.download:hover {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         padding: 20px 10px 10px 10px;
-        border: 2px solid $green1;
+        border: 2px solid $black3;
 
         .textbox {
             text-indent: 50px;
@@ -92,7 +92,7 @@ a.download:hover {
 //                                                                      aa,    ,88
 //                                                                       "Y8bbdP"
 .landing {
-    margin-left: 149px;
+    margin-left: 144px;
     background-image: url('../image/bg.png');
     background-size: cover;
     height: 100%;
@@ -130,7 +130,7 @@ a.download:hover {
         text-align: center;
         transition: min-height 0.3s;
         img {
-            width: 30%;
+            width: 50%;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -209,7 +209,7 @@ a.download:hover {
     }
     @media #{$smartphone} {
         .schedule .row:not(:first-child) .col-5 {
-            color: $black1;
+            color: $red1;
             hr {
                 display: none;
             }
@@ -240,13 +240,13 @@ a.download:hover {
             font-size: 20px;
             text-align: center;
             img {
-                width: 50%;
+                width: 60%;
                 height: auto;
                 @include transition (transform, 0.8s);
             }
-            img:hover {
-                transform: rotateY(180deg);
-            }
+            // img:hover {
+            //     transform: rotateY(180deg);
+            // }
 
         }
         // .layout-content {
@@ -357,8 +357,8 @@ a.download:hover {
     // */
     //
     ._faq {
-        p:first-child {
-            // color: #000;
+        p:last-child {
+            color: $red1;
         }
     }
 }
@@ -384,7 +384,7 @@ a.download:hover {
         display: block;
     }
     .landing {
-        margin-left: 60px;
+        margin-left: 55px;
 
         // Layout
         .layout-box {
@@ -410,9 +410,6 @@ a.download:hover {
 
 
         ._home {
-            .texture img {
-                width: 50%;
-            }
             .box {
                 font-size: 200px;
                 span {
@@ -452,7 +449,6 @@ a.download:hover {
         display: none;
     }
     .landing {
-        margin-left: 60px;
 
         // Layout
         .layout-box {

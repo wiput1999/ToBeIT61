@@ -18,7 +18,7 @@
 @import '_webkit';
 
 .signup {
-    margin-left: 149px;
+    margin-left: 144px;
     background-image: url('../image/bg.png');
     background-size: cover;
     height: 100%;
@@ -58,7 +58,7 @@
 }
 @media #{$smartphone} {
     .signup {
-        margin-left: 60px;
+        margin-left: 55px;
         font-size: 23px;
     }
 }
