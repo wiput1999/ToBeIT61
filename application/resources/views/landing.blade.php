@@ -7,7 +7,7 @@
         {{-- Home --}}
 
         <div class="_home section" id="home">
-            <img src="{{ d_asset('/images/home_logo_re.png')}}" />
+            <img src="{{ asset('/images/home_logo_re.png')}}" />
         </div>
         <hr />
 
@@ -170,7 +170,7 @@
                     <div class="col col-6">
                         <br />
                         <abbr title="Flow chart">
-                            <img src="{{ d_asset('images/course_01.png')}}" />
+                            <img src="{{ asset('images/course_01.png')}}" />
                         </abbr>
                         <br /><br /><hr  class="hr2 small"/><br/>
 
@@ -208,7 +208,7 @@
 
                         <br />
                         <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
-                            <img src="{{d_asset('images/course_02.png')}}" />
+                            <img src="{{asset('images/course_02.png')}}" />
                         </abbr>
                         <br /><br /><hr  class="hr2 small"/><br/>
 
@@ -434,7 +434,7 @@
                     </div>
                     <div>
                         <br />
-                        <a href="{{ d_url('/documents/transport.pdf') }}" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสารคู่มือการเดินทาง</a>
+                        <a href="{{ url('/documents/transport.pdf') }}" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสารคู่มือการเดินทาง</a>
                     </div>
                 </div>
             </div>
@@ -455,16 +455,16 @@
                             <i class="fa fa-angle-left" aria-hidden="true" class="prev"></i>
                             <i class="fa fa-angle-right" aria-hidden="true" class="next"></i>
                         </div>
-                        <img id="1" src="{{d_asset('images/photos/01.png')}}" class="active" />
-                        <img id="2" src="{{d_asset('images/photos/02.png')}}" />
-                        <img id="3" src="{{d_asset('images/photos/03.png')}}" />
-                        <img id="4" src="{{d_asset('images/photos/04.png')}}" />
-                        <img id="5" src="{{d_asset('images/photos/05.png')}}" />
-                        <img id="6" src="{{d_asset('images/photos/06.png')}}" />
-                        <img id="7" src="{{d_asset('images/photos/07.png')}}" />
-                        <img id="8" src="{{d_asset('images/photos/08.png')}}" />
-                        <img id="9" src="{{d_asset('images/photos/09.png')}}" />
-                        <img id="10" src="{{d_asset('images/photos/10.png')}}" />
+                        <img id="1" src="{{asset('images/photos/01.png')}}" class="active" />
+                        <img id="2" src="{{asset('images/photos/02.png')}}" />
+                        <img id="3" src="{{asset('images/photos/03.png')}}" />
+                        <img id="4" src="{{asset('images/photos/04.png')}}" />
+                        <img id="5" src="{{asset('images/photos/05.png')}}" />
+                        <img id="6" src="{{asset('images/photos/06.png')}}" />
+                        <img id="7" src="{{asset('images/photos/07.png')}}" />
+                        <img id="8" src="{{asset('images/photos/08.png')}}" />
+                        <img id="9" src="{{asset('images/photos/09.png')}}" />
+                        <img id="10" src="{{asset('images/photos/10.png')}}" />
                     </div>
                 </div>
                 <br /><hr class="hr2"/>

@@ -8,7 +8,7 @@
 
     <title>Admin Panel | ToBeIT'61</title>
 
-    <link rel="stylesheet" href="{{ d_asset(mix('/css/backend.css')) }}">
+    <link rel="stylesheet" href="{{ mix('/2017/css/backend.css') }}">
 </head>
 <body>
     Disabled!
@@ -17,8 +17,8 @@
         <p id="login-footer">&copy; 2017 | ToBeIT'61</p>
     </div>
 
-    <script src="{{ d_asset(mix('/js/jquery.min.js')) }}"></script>
-    <script src="{{ d_asset(mix('/js/popper.min.js')) }}"></script>
-    <script src="{{ d_asset(mix('/js/bootstrap.min.js')) }}"></script>
+    <script src="{{ mix('/2017/js/jquery.min.js') }}"></script>
+    <script src="{{ mix('/2017/js/popper.min.js') }}"></script>
+    <script src="{{ mix('/2017/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

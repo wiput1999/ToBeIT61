@@ -13,7 +13,7 @@
         </div>
     @endif
     <br />
-    <form method="post" action="{{ d_url('/backend/edit/'. $data['id']) }}">
+    <form method="post" action="{{ url('/backend/edit/'. $data['id']) }}">
         {{ csrf_field() }}
         <div class="row" id="profile-form-row">
             <div class="col-3">
