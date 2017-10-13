@@ -19,6 +19,12 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item {{ \Request::is('backend/changepassword') ? 'active':'' }}">
+                <a href="{{ URL('/backend/changepassword') }}" class="nav-link">Change Password</a>
+            </li>
+            <li class="nav-item {{ \Request::is('backend/config') ? 'active':'' }}">
+                <a href="{{ URL('/backend/config') }}" class="nav-link">Config</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('logout') }}"
                    onclick="event.preventDefault();

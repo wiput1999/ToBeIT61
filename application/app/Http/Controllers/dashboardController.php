@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\Register;
+use App\Models\Config;
+use App\User;
 use Carbon;
+use DB;
 
 class dashboardController extends Controller
 {
@@ -76,7 +79,7 @@ class dashboardController extends Controller
             'food'                  => 'required',
             'line'                  => 'required',
             'facebook'              => 'required|url',
-            'appointment'           => 'required|in:1,2,3,4',
+            'appointment'           => 'required|in:1,2,3,4,5',
             'exam'                  => 'required|in:0,1',
             'round'                 => 'required|in:1,2,3',
         ];
@@ -140,5 +143,47 @@ class dashboardController extends Controller
         Register::find($id)->delete();
 
         return redirect('/backend/list/'. $round);
+    }
+
+    public function getChangePassword() {
+        return view('backend.changepassword');
+    }
+
+    public function doChangePassword(Request $request) {
+        $inputs = $request->all();
+        $rules = [
+            'oldpassword'           => 'required',
+            'newpassword'           => 'required|min:8|regex:/^(?=\S*[a-z])(?=\S*[!@#$&*])(?=\S*[A-Z])(?=\S*[\d])\S*$/'
+        ];
+        $messages = [
+        ];
+        $validator = Validator::make($inputs, $rules, $messages);
+        if($validator->fails()){
+            return redirect('/backend/changepassword/')->withErrors($validator);
+        }
+
+        $current_password = \Auth::User()->password;
+        if(\Hash::check($inputs['oldpassword'], $current_password)) {
+            $user_id = \Auth::User()->id;
+            $obj_user = User::find($user_id);
+            $obj_user->password = \Hash::make($inputs['newpassword']);;
+            $obj_user->save();
+            return redirect('/backend/dashboard/');
+        }
+    }
+
+    public function getConfig() {
+        $configs = Config::all();
+        return view('backend.config', ['configs' => $configs]);
+    }
+
+    public function doConfig(Request $request) {
+        $inputs = $request->except('_token');
+
+        foreach ($inputs as $key => $value) {
+            DB::table('config')->where('key', $key)->update(['value' => $value]);
+        }
+
+        return redirect('/backend/config');
     }
 }

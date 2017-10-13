@@ -151,6 +151,7 @@
                             <option value="2" {{  ($data['appointment'] == 2 ? "selected":"") }}>สนามบินสุวรรณภูมิ</option>
                             <option value="3" {{  ($data['appointment'] == 3 ? "selected":"") }}>สถาณีรถไฟหัวตะเข้</option>
                             <option value="4" {{  ($data['appointment'] == 4 ? "selected":"") }}>หน้าคณะ IT</option>
+                            <option value="5" {{  ($data['appointment'] == 5 ? "selected":"") }}>วินรถตู้</option>
                         </select>
                     </div>
                 </div>

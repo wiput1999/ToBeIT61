@@ -28,7 +28,7 @@ class CreateRegisterTable extends Migration
             $table->string('food');
             $table->string('line');
             $table->string('facebook');
-            $table->enum('appointment', [1, 2, 3, 4]);
+            $table->enum('appointment', [1, 2, 3, 4, 5]);
             $table->string('parent',10);
             $table->boolean('exam');
             $table->enum('round', [1, 2, 3]);

@@ -36,4 +36,12 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/backend/edit/{id}', 'dashboardController@doEdit');
 
     Route::delete('/backend/profile/{id}', 'dashboardController@doDelete');
+
+    Route::get('/backend/changepassword', 'dashboardController@getChangePassword');
+
+    Route::post('/backend/changepassword', 'dashboardController@doChangePassword');
+
+    Route::get('/backend/config', 'dashboardController@getConfig');
+
+    Route::post('/backend/config', 'dashboardController@doConfig');
 });
