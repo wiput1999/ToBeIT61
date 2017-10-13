@@ -1,0 +1,79 @@
+@import '_media';
+@import '_colors';
+
+// /*
+//
+// 88888888888
+// 88                                  ,d
+// 88                                  88
+// 88aaaaa   ,adPPYba,   8b,dPPYba,  MM88MMM
+// 88"""""  a8"     "8a  88P'   `"8a   88
+// 88       8b       d8  88       88   88
+// 88       "8a,   ,a8"  88       88   88,
+// 88        `"YbbdP"'   88       88   "Y888
+// */
+@font-face {
+    font-family: "Alice";
+    src: url('../fonts/alice.ttf') format('truetype');
+}
+.Alice, .Alice *{
+    font-family: "Alice";
+}
+
+@font-face {
+    font-family: "AengAei";
+    src: url('../fonts/aengaei.ttf') format('truetype');
+}
+.AengAei, .AengAei * {
+    font-family: "AengAei";
+}
+
+@font-face {
+    font-family: "PaayMaay";
+    src: url('../fonts/paaymaay.ttf') format('truetype');
+}
+.PaayMayy, .PaayMaay * {
+    font-family: "PayyMayy";
+}
+
+
+
+
+
+
+// /*
+//
+//   ,ad8888ba,                                                     88  88
+//  d8"'    `"8b                                                    88  88
+// d8'        `8b                                                   88  88
+// 88          88  8b       d8   ,adPPYba,  8b,dPPYba,  ,adPPYYba,  88  88
+// 88          88  `8b     d8'  a8P_____88  88P'   "Y8  ""     `Y8  88  88
+// Y8,        ,8P   `8b   d8'   8PP"""""""  88          ,adPPPPP88  88  88
+//  Y8a.    .a8P     `8b,d8'    "8b,   ,aa  88          88,    ,88  88  88
+//   `"Y8888Y"'        "8"       `"Ybbd8"'  88          `"8bbdP"Y8  88  88
+// */
+//
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "PayyMayy", 'Pridi', "AengAei", "Alice", serif;
+}
+
+hr{
+    border:none;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(-35deg, #1f8f63, #0d0628);
+}
+.hr2 {
+    background: linear-gradient(-35deg, $red1, $red2);
+}
+.small {
+    height: 2px;
+}
+
+.radius {
+    border-radius: 5px;
+}

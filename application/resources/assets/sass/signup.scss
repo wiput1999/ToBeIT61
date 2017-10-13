@@ -1,0 +1,64 @@
+// /*
+//
+//  ad88888ba   88
+// d8"     "8b  ""
+// Y8,
+// `Y8aaaaa,    88   ,adPPYb,d8  8b,dPPYba,   88       88  8b,dPPYba,
+//   `"""""8b,  88  a8"    `Y88  88P'   `"8a  88       88  88P'    "8a
+//         `8b  88  8b       88  88       88  88       88  88       d8
+// Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
+//  "Y88888P"   88   `"YbbdP"Y8  88       88   `"YbbdP'Y8  88`YbbdP"'
+//                   aa,    ,88                            88
+//                    "Y8bbdP"                             88
+// */
+//
+
+@import '_media';
+@import '_colors';
+@import '_webkit';
+
+.signup {
+    margin-left: 149px;
+    background-image: url('../image/bg.png');
+    background-size: cover;
+    height: 100%;
+    font-size: 25px;
+    color: #f2f2f2;
+
+    label {
+        color: $white1;
+    }
+
+    .desc {
+        color: $black1;
+    }
+}
+
+
+
+
+
+
+
+// /*
+//
+// 88b           d88                       88  88
+// 888b         d888                       88  ""
+// 88`8b       d8'88                       88
+// 88 `8b     d8' 88   ,adPPYba,   ,adPPYb,88  88  ,adPPYYba,
+// 88  `8b   d8'  88  a8P_____88  a8"    `Y88  88  ""     `Y8
+// 88   `8b d8'   88  8PP"""""""  8b       88  88  ,adPPPPP88
+// 88    `888'    88  "8b,   ,aa  "8a,   ,d88  88  88,    ,88
+// 88     `8'     88   `"Ybbd8"'   `"8bbdP"Y8  88  `"8bbdP"Y8
+// */
+//
+
+@media #{$table} {
+
+}
+@media #{$smartphone} {
+    .signup {
+        margin-left: 60px;
+        font-size: 23px;
+    }
+}
