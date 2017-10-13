@@ -20,19 +20,12 @@
 
 
         <!-- Style -->
-        {{ HTML::style('css/layout.min.css') }}
-        {{ HTML::style('css/header.min.css') }}
-        {{ HTML::style('css/landing.min.css') }}
-        {{ HTML::style('css/signup.min.css') }}
-        {{ HTML::style('kube/dist/css/kube.css') }}
-
+        <link rel="stylesheet" href="{{ d_asset('/css/app.css') }}">
         <!-- Js -->
-        {{ HTML::script('js/jquery.js') }}
-        {{ HTML::script('js/jquery-ui.js') }}
-        {{ HTML::script('js/layout.js') }}
-        {{ HTML::script('js/landing.js') }}
-        {{ HTML::script('js/scroll.js') }}
-        {{ HTML::script('kube/dist/js/kube.min.js') }}
+        <script src="{{ d_asset('/js/jquery.min.js') }}"></script>
+        <script src="{{ d_asset('/js/landing.js') }}"></script>
+        <script src="{{ d_asset('/js/scroll.js') }}"></script>
+        <script src="{{ d_asset('/js/kube.min.js') }}"></script>
 
 
 

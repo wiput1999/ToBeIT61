@@ -8,7 +8,7 @@
 
     <title>Admin Panel | ToBeIT'61</title>
 
-    <link rel="stylesheet" href="{{ d_asset(mix('/css/backend.css')) }}">
+    <link rel="stylesheet" href="{{ mix('/css/backend.css') }}">
 </head>
 <body>
     <div class="container" id="login-page">

@@ -1,7 +1,12 @@
 {
+    "/js/landing.js": "/js/landing.js",
     "/css/backend.css": "/css/backend.css",
+    "/css/app.css": "/css/app.css",
+    "/js/scroll.js": "/js/scroll.js",
     "/js/jquery.min.js": "/js/jquery.min.js",
     "/js/bootstrap.min.js": "/js/bootstrap.min.js",
     "/js/popper.min.js": "/js/popper.min.js",
-    "/js/list.min.js": "/js/list.min.js"
+    "/js/list.min.js": "/js/list.min.js",
+    "/js/kube.min.js": "/js/kube.min.js",
+    "/js/jquery-ui.js": "/js/jquery-ui.js"
 }

@@ -17,9 +17,10 @@
 @import '_colors';
 @import '_webkit';
 
+
 .signup {
     margin-left: 144px;
-    background-image: url('../image/bg.png');
+    background-image: url('../images/bg.png');
     background-size: cover;
     height: 100%;
     font-size: 25px;
@@ -30,13 +31,66 @@
     }
 
     .desc {
-        color: $black1;
+        color: $white1;
     }
 }
 
 
+.form-alert {
+    border: 1px solid $red2;
+    padding: 20px 5px 5px 5px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    color: $red1;
+    background-color: $white1;
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        padding: 5px;
+        list-style-type: disc;
+    }
+}
 
+.form-success {
+    border: 1px solid $green2;
+    padding: 5%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    color: $green2;
+    text-align: center;
+    font-size: 50px;
+    background-color: $white1;
 
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        padding: 5px;
+        list-style-type: disc;
+    }
+
+}
+
+.form-close {
+    border: 1px solid $red1;
+    padding: 5%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    color: $red1;
+    text-align: center;
+    font-size: 50px;
+    background-color: $white1;
+
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        padding: 5px;
+        list-style-type: disc;
+    }
+
+}
 
 
 

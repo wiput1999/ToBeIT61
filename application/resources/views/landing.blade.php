@@ -17,13 +17,6 @@
 
     <div class="landing">
 
-
-        {{-- Texutre Fixed --}}
-        {{-- <span class="fixed">
-            {{HTML::image('image/mushroom.png')}}
-        </span> --}}
-
-
         {{--
         88        88
         88        88
@@ -35,11 +28,7 @@
         88        88   `"YbbdP"'   88      88      88   `"Ybbd8"' --}}
 
         <div class="_home section" id="home">
-            {{HTML::image('image/home_logo_re.png')}}
-            {{-- <div class="box Alice" style="overflow:visible;">
-                ToBe<font color="3998f1">IT</font>61<br />
-                <span class="AengAei">At KMITL</span>
-            </div> --}}
+            <img src="{{ asset('/images/home_logo_re.png')}}" />
         </div>
         <hr />
 
@@ -56,10 +45,6 @@
         d8'          `8b  8Y"Ybbd8"'    `"YbbdP"'    `"YbbdP'Y8    "Y888--}}
 
         <div class="_about" id="about">
-
-            {{-- <span class="texture">
-                {{HTML::image('image/texture_01.png')}}
-            </span> --}}
             <div class="layout-box">
                 <div class="layout-title">
                     <span class="head">ABOUT</span> | เกี่ยวกับโครงการ
@@ -71,7 +56,6 @@
                 </div>
                 <div class="layout-footer">
                     <br />
-                    {{-- <hr class="hr2 radius"/> --}}
                 </div>
             </div>
         </div>
@@ -90,9 +74,6 @@
          "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"' --}}
 
         <div class="_schedule" id="schedule">
-            {{-- <span class="texture">
-                {{HTML::image('image/texture_02.png')}}
-            </span> --}}
             <div class="layout-box">
                 {{-- กิจกรรม --}}
                 <div class="layout-title">
@@ -236,15 +217,8 @@
                             <br /><span class="req">*</span> เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา
                         </div>
                     </div>
-
-
                     <br />
-                    {{-- <hr class="radius"/> --}}
                 </div>
-
-                {{-- <div class="layout-footer">
-                    <br /><hr class="hr2 radius"/>
-                </div> --}}
             </div>
         </div>
         <hr />
@@ -283,7 +257,7 @@
 
                         <br />
                         <abbr title="Flow chart">
-                            {{HTML::image('image/course_01.png')}}
+                            <img src="{{asset('images/course_01.png')}}" />
                         </abbr>
                         <br /><br /><hr  class="hr2 small"/><br/>
 
@@ -322,7 +296,7 @@
 
                         <br />
                         <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
-                            {{HTML::image('image/course_02.png')}}
+                            <img src="{{asset('images/course_02.png')}}" />
                         </abbr>
                         <br /><br /><hr  class="hr2 small"/><br/>
 
@@ -430,7 +404,6 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    {{-- <hr class="hr2 small radius"/> --}}
                                     - จากชลบุรี ใช้เส้นทางด่วนพิเศษ กรุงเทพฯ–ชลบุรี(มอเตอร์เวย์) ออกจากมอเตอร์เวย์ที่ทางเข้าสนามบินสุวรรณภูมิ ทางเบี่ยงถนนคู่ขนานมอเตอร์เวย์ ถนนฉลองกรุง
                                 </li>
                             </ul>
@@ -447,17 +420,14 @@
                             สายตะวันออก : สถานีต้นทางกรุงเทพฯ(หัวลำโพง)ผ่าน พญาไท ราชปรารภ มักกะสัน อโศก คลองตัน หัวหมาก บ้านทับช้าง ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
                             <br />
                             *แนะนำให้มาขบวน 275 และ 283
-                            {{-- <hr class="hr2 small radius"/> --}}
                             สายชานเมือง (รังสิต-หัวตะเข้) : สถานีต้นทางรังสิตผ่าน ดอนเมือง การเคหะกม.19 หลักสี่ ทุ่งสองห้อง ตลาดใหม่ดอนเมือง บางเขน นิคมรถไฟกม.11 ชุมทางบางซื่อ ประดิพัทธ์ สามเสน โรงพยาบาลรามาธิบดี อุรุพงษ์ พญาไทย ราชปรารภ มักกะสัน อโศก คลองตัน สุขุมวิท71 หัวหมาก บ้านทับช้าง ซอยวัดลานบุญ ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
                             <br />
                             *รถไฟขบวน 376 ออกจากรังสิตเวลา 05.35 น. ถึงหัวตะเข้เวลา 07.40 น.โดยประมาณ (รถขบวนนี้ไม่เข้าหัวลำโพง)
-                            {{-- <hr class="hr2 small radius"/> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{-- <hr /> --}}
 
 
 
@@ -479,19 +449,19 @@
                 <div class="slider">
                     <div class="slider-wrap">
                         <div class="arrow">
-                            <i class="fa fa-angle-left" aria-hidden="true" class="prev" onclick="slider('prev')"></i>
-                            <i class="fa fa-angle-right" aria-hidden="true" class="next" onclick="slider('next')"></i>
+                            <i class="fa fa-angle-left" aria-hidden="true" class="prev"></i>
+                            <i class="fa fa-angle-right" aria-hidden="true" class="next"></i>
                         </div>
-                        <img id="1" src="{{asset('image/photos/01.png')}}" class="active" />
-                        <img id="2" src="{{asset('image/photos/02.png')}}" />
-                        <img id="3" src="{{asset('image/photos/03.png')}}" />
-                        <img id="4" src="{{asset('image/photos/04.png')}}" />
-                        <img id="5" src="{{asset('image/photos/05.png')}}" />
-                        <img id="6" src="{{asset('image/photos/06.png')}}" />
-                        <img id="7" src="{{asset('image/photos/07.png')}}" />
-                        <img id="8" src="{{asset('image/photos/08.png')}}" />
-                        <img id="9" src="{{asset('image/photos/09.png')}}" />
-                        <img id="10" src="{{asset('image/photos/10.png')}}" />
+                        <img id="1" src="{{asset('images/photos/01.png')}}" class="active" />
+                        <img id="2" src="{{asset('images/photos/02.png')}}" />
+                        <img id="3" src="{{asset('images/photos/03.png')}}" />
+                        <img id="4" src="{{asset('images/photos/04.png')}}" />
+                        <img id="5" src="{{asset('images/photos/05.png')}}" />
+                        <img id="6" src="{{asset('images/photos/06.png')}}" />
+                        <img id="7" src="{{asset('images/photos/07.png')}}" />
+                        <img id="8" src="{{asset('images/photos/08.png')}}" />
+                        <img id="9" src="{{asset('images/photos/09.png')}}" />
+                        <img id="10" src="{{asset('images/photos/10.png')}}" />
                     </div>
                 </div>
                 <br /><hr class="hr2"/>
