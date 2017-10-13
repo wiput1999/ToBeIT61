@@ -37,7 +37,7 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                 </a>
             @endif
             @if (!isset($success) and ($count < $limit))
-                <form method="post" action="{{ URL('/signup') }}" class="form">
+                <form method="post" action="{{ d_url('/signup') }}" class="form">
                     {{--If validator error--}}
                     @if (count($errors) > 0)
                         <div class="form-alert">
