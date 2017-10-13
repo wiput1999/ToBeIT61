@@ -130,7 +130,7 @@
                             28 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            Logic (P’Cartoon, P’Fluke, P'Pee, P'Diff) <hr class="small"/>
+                            Logic (P’Gun, P’Khing, P'Dew, P'Nut) <hr class="small"/>
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                             29 ตุลาคม 2560 <hr class="small"/>
                         </div>
                         <div class="col col-7">
-                            Flowchart (P’Gun, P’Khing, P'Dew, P'Nut) <hr class="small"/>
+                            Flowchart (P’Cartoon, P’Fluke, P'Pee, P'Diff) <hr class="small"/>
                         </div>
                     </div>
 
