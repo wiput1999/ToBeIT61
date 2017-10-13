@@ -9,13 +9,25 @@
         <li><a href="#">FAQ</a></li>
     </ul> --}}
     <div class="texture">
-        {{HTML::image('image/nav_top.png')}}
-        {{HTML::image('image/nav_bottom.png')}}
+        {{-- {{HTML::image('image/nav_top.png')}} --}}
+        {{-- {{HTML::image('image/nav_bottom.png')}} --}}
         {{-- {{HTML::image('image/mushroom.png')}} --}}
     </div>
     <table>
         <tr>
             <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <abbr title="ลงทะเบียน!">
+                    <a href="/signup" style="background: #e85a72;">
+                        <i class="fa fa-id-card-o" aria-hidden="true" style="color: #181819;"></i>
+                        <span >ลงทะเบียน!</span>
+                    </a>
+                </abbr>
+            </td>
             <td></td>
             <td></td>
         </tr>

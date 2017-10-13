@@ -65,10 +65,12 @@ hr{
     border:none;
     height: 7px;
     width: 100%;
-    background: linear-gradient(-35deg, #1f8f63, #0d0628);
+    // background: linear-gradient(-35deg, #1f8f63, #0d0628);
+    background: $red1;
 }
 .hr2 {
-    background: linear-gradient(-35deg, $red1, $red2);
+    // background: linear-gradient(-35deg, $red1, $red2);
+    background: $green1;
 }
 .small {
     height: 2px;

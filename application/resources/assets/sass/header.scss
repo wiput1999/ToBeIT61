@@ -10,14 +10,14 @@
 // 88        88   `"Ybbd8"'  `"8bbdP"Y8   `"8bbdP"Y8   `"Ybbd8"'  88
 // */
 //
-
+@import '_colors';
 @import '_media';
 @import '_webkit';
 .header {
     position: fixed;
     top: 0;
     height: 100%;
-    background: #291529;
+    background: $black3;
 
     .texture {
         img {
@@ -39,7 +39,7 @@
         td {
             i {
                 font-size: 18px;
-                color: #1f8f63;
+                color: $green1;
                 font-weight: bold;
             }
             a {
@@ -59,11 +59,11 @@
         }
 
         td:nth-child(2) {
-            width: 7px;
+            width: 3px;
             background: #a80037;
         }
         td:nth-child(3) {
-            width: 3px;
+            width: 2px;
             background: #d94879;
         }
     }

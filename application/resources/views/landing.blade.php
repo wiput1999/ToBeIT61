@@ -19,9 +19,9 @@
 
 
         {{-- Texutre Fixed --}}
-        <span class="fixed">
+        {{-- <span class="fixed">
             {{HTML::image('image/mushroom.png')}}
-        </span>
+        </span> --}}
 
 
         {{--
@@ -35,11 +35,11 @@
         88        88   `"YbbdP"'   88      88      88   `"Ybbd8"' --}}
 
         <div class="_home section" id="home">
-            {{HTML::image('image/home_logo.png')}}
-            <div class="box Alice" style="overflow:visible;">
+            {{HTML::image('image/home_logo_re.png')}}
+            {{-- <div class="box Alice" style="overflow:visible;">
                 ToBe<font color="3998f1">IT</font>61<br />
                 <span class="AengAei">At KMITL</span>
-            </div>
+            </div> --}}
         </div>
         <hr />
 
@@ -57,9 +57,9 @@
 
         <div class="_about" id="about">
 
-            <span class="texture">
+            {{-- <span class="texture">
                 {{HTML::image('image/texture_01.png')}}
-            </span>
+            </span> --}}
             <div class="layout-box">
                 <div class="layout-title">
                     <span class="head">ABOUT</span> | เกี่ยวกับโครงการ
@@ -70,7 +70,8 @@
                     </p>
                 </div>
                 <div class="layout-footer">
-                    <br /><hr class="hr2 radius"/>
+                    <br />
+                    {{-- <hr class="hr2 radius"/> --}}
                 </div>
             </div>
         </div>
@@ -89,9 +90,9 @@
          "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"' --}}
 
         <div class="_schedule" id="schedule">
-            <span class="texture">
+            {{-- <span class="texture">
                 {{HTML::image('image/texture_02.png')}}
-            </span>
+            </span> --}}
             <div class="layout-box">
                 {{-- กิจกรรม --}}
                 <div class="layout-title">
@@ -154,12 +155,13 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <span class="req">*</span> เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา
+                            <br /><span class="req">*</span> เวลาติวทุกวัน เริ่ม 8.30 นาฬิกา จนถึง 16.30 นาฬิกา
                         </div>
                     </div>
 
 
-                    <br /><hr class="radius"/>
+                    <br />
+                    {{-- <hr class="radius"/> --}}
                 </div>
 
 
@@ -216,18 +218,16 @@
                         </div>
                         <div class="col col-7">
                             Logic (P’แทท, P’เจม) <br />
-                            Algolithm & ปัญหาเชาว์ (P’จ๊าบ, P’ท็อป) <hr class="small"/>
+                            Algolithm & ปัญหาเชาว์ (P’จ๊าบ, P’ท็อป)<hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            30 มกราคม 2559 <br /><hr class="hr2 small"/>
+                            30 มกราคม 2559 <br /> <hr class="hr2 small"/>
                         </div>
                         <div class="col col-7">
-                            Math (P’แบงค์, P’กลอย) & Quiz<br />
-
-                            <hr class="hr2 small"/>
+                            Math (P’แบงค์, P’กลอย) & Quiz<br /> <hr class="hr2 small"/>
                         </div>
                     </div>
 
@@ -238,12 +238,13 @@
                     </div>
 
 
-                    <br /><hr class="radius"/>
+                    <br />
+                    {{-- <hr class="radius"/> --}}
                 </div>
 
-                <div class="layout-footer">
+                {{-- <div class="layout-footer">
                     <br /><hr class="hr2 radius"/>
-                </div>
+                </div> --}}
             </div>
         </div>
         <hr />
@@ -261,9 +262,9 @@
           `"Y8888Y"'    `"YbbdP"'    `"YbbdP'Y8  88          `"YbbdP"'   `"Ybbd8"' --}}
 
         <div class="_course section" id="course">
-            <span class="texture">
+            {{-- <span class="texture">
                 {{HTML::image('image/texture_03.png')}}
-            </span>
+            </span> --}}
 
             <div class="layout-box">
                 <div class="layout-title">
@@ -275,10 +276,10 @@
                 <div class="row gutters">
                     <div class="col col-6">
 
-                        <br />
+                        {{-- <br />
                         <div class="download">
                             Flow chart
-                        </div>
+                        </div> --}}
 
                         <br />
                         <abbr title="Flow chart">
@@ -292,8 +293,11 @@
                         </div>
 
                         <div style="text-align: left; line-height: 1.8;">
+
                             <br />
-                            <hr  class="hr2 small"/><br/>
+                            {{-- <hr  class="hr2 small"/> --}}
+                            <br/>
+
                             <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
                             - พี่บอส (P’BossWaran) <br />
                             - พี่ฟรอย (P’Foy) <br />
@@ -304,16 +308,17 @@
                             <a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
                         </div>
 
-                        <br /><hr class="radius"/>
+                        <br />
+                        {{-- <hr class="radius"/> --}}
                     </div>
 
 
                     <div class="col col-6">
 
-                        <br />
+                        {{-- <br />
                         <div class="download">
                             คิดวิเคราะห์ เชิงประยุกค์
-                        </div>
+                        </div> --}}
 
                         <br />
                         <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
@@ -328,8 +333,11 @@
                         </div>
 
                         <div style="text-align: left; line-height: 1.8;">
+
                             <br />
-                            <hr  class="hr2 small"/><br/>
+                            {{-- <hr class="hr2 small"/> --}}
+                            <br/>
+
                             <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
                             - พี่เจเจ (P’JayJay) <br />
                             - พี่ดิว (P’Dew) <br />
@@ -340,7 +348,8 @@
                             <a href="#download2" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
                         </div>
 
-                        <br /><hr class="radius"/>
+                        <br />
+                        {{-- <hr class="radius"/> --}}
                     </div>
                 </div>
             </div>
@@ -368,7 +377,10 @@
                 <div class="layout-content">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.7966510493134!2d100.7812803055325!3d13.7307578352925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xd2850fd9ee87f249!2sFaculty+of+Information+Technology!5e0!3m2!1sen!2sth!4v1450164792173" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 
-                    <br /><br /><hr class="hr2 radius" /><br />
+                    <br /><br />
+                    {{-- <hr class="hr2 radius" /> --}}
+                    <br />
+
                     <div class="layout-title" style="text-align:left; padding: 10px;">
                         <i class="fa fa-subway" aria-hidden="true"></i> AIRPORT RAIL LINK
                     </div>
@@ -399,15 +411,15 @@
                             <ul>
                                 <li>
                                     - เริ่มจากเส้นทางถนนศรีนครินทร์ที่แยกอ่อนนุช เข้าถนนอ่อนนุช (สุขุมวิท77) ระยะทางประมาณ 16 กม. แยกเข้าถนนฉลองกรุง
-                                    <hr class="hr2 small radius"/>
+                                    {{-- <hr class="hr2 small radius"/> --}}
                                 </li>
                                 <li>
                                     - เริ่มจากเส้นทางตลาดมีนบุรี เข้าถนนสุวินทวงศ์ ถนนบึงบัว ถนนฉลองกรุง
-                                    <hr class="hr2 small radius"/>
+                                    {{-- <hr class="hr2 small radius"/> --}}
                                 </li>
                                 <li>
                                     - จากกรุงเทพฯ ใช้เส้นทางด่วนพิเศษ กรุงเทพฯ–ชลบุรี (มอเตอร์เวย์)
-                                    <hr class="hr2 small radius"/>
+                                    {{-- <hr class="hr2 small radius"/> --}}
                                     <ul>
                                         <li>
                                             -> ออกจากมอเตอร์เวย์ที่ถนนร่มเกล้า ถนนอ่อนนุช ถนนฉลองกรุง
@@ -418,7 +430,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <hr class="hr2 small radius"/>
+                                    {{-- <hr class="hr2 small radius"/> --}}
                                     - จากชลบุรี ใช้เส้นทางด่วนพิเศษ กรุงเทพฯ–ชลบุรี(มอเตอร์เวย์) ออกจากมอเตอร์เวย์ที่ทางเข้าสนามบินสุวรรณภูมิ ทางเบี่ยงถนนคู่ขนานมอเตอร์เวย์ ถนนฉลองกรุง
                                 </li>
                             </ul>
@@ -435,17 +447,17 @@
                             สายตะวันออก : สถานีต้นทางกรุงเทพฯ(หัวลำโพง)ผ่าน พญาไท ราชปรารภ มักกะสัน อโศก คลองตัน หัวหมาก บ้านทับช้าง ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
                             <br />
                             *แนะนำให้มาขบวน 275 และ 283
-                            <hr class="hr2 small radius"/>
+                            {{-- <hr class="hr2 small radius"/> --}}
                             สายชานเมือง (รังสิต-หัวตะเข้) : สถานีต้นทางรังสิตผ่าน ดอนเมือง การเคหะกม.19 หลักสี่ ทุ่งสองห้อง ตลาดใหม่ดอนเมือง บางเขน นิคมรถไฟกม.11 ชุมทางบางซื่อ ประดิพัทธ์ สามเสน โรงพยาบาลรามาธิบดี อุรุพงษ์ พญาไทย ราชปรารภ มักกะสัน อโศก คลองตัน สุขุมวิท71 หัวหมาก บ้านทับช้าง ซอยวัดลานบุญ ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
                             <br />
                             *รถไฟขบวน 376 ออกจากรังสิตเวลา 05.35 น. ถึงหัวตะเข้เวลา 07.40 น.โดยประมาณ (รถขบวนนี้ไม่เข้าหัวลำโพง)
-                            <hr class="hr2 small radius"/>
+                            {{-- <hr class="hr2 small radius"/> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr />
+        {{-- <hr /> --}}
 
 
 
