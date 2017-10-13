@@ -1,31 +1,10 @@
-<!--
-88                                             88  88
-88                                             88  ""
-88                                             88
-88           ,adPPYYba,  8b,dPPYba,    ,adPPYb,88  88  8b,dPPYba,    ,adPPYb,d8
-88           ""     `Y8  88P'   `"8a  a8"    `Y88  88  88P'   `"8a  a8"    `Y88
-88           ,adPPPPP88  88       88  8b       88  88  88       88  8b       88
-88           88,    ,88  88       88  "8a,   ,d88  88  88       88  "8a,   ,d88
-88888888888  `"8bbdP"Y8  88       88   `"8bbdP"Y8  88  88       88   `"YbbdP"Y8
-                                                                     aa,    ,88
-                                                                      "Y8bbdP"
--->
-
-
+{{--Landing--}}
 @extends('layouts.layout')
 @section('content')
 
     <div class="landing">
 
-        {{--
-        88        88
-        88        88
-        88        88
-        88aaaaaaaa88   ,adPPYba,   88,dPYba,,adPYba,    ,adPPYba,
-        88""""""""88  a8"     "8a  88P'   "88"    "8a  a8P_____88
-        88        88  8b       d8  88      88      88  8PP"""""""
-        88        88  "8a,   ,a8"  88      88      88  "8b,   ,aa
-        88        88   `"YbbdP"'   88      88      88   `"Ybbd8"' --}}
+        {{-- Home --}}
 
         <div class="_home section" id="home">
             <img src="{{ asset('/images/home_logo_re.png')}}" />
@@ -34,15 +13,7 @@
 
 
 
-        {{--
-               db         88
-              d88b        88                                       ,d
-             d8'`8b       88                                       88
-            d8'  `8b      88,dPPYba,    ,adPPYba,   88       88  MM88MMM
-           d8YaaaaY8b     88P'    "8a  a8"     "8a  88       88    88
-          d8""""""""8b    88       d8  8b       d8  88       88    88
-         d8'        `8b   88b,   ,a8"  "8a,   ,a8"  "8a,   ,a88    88,
-        d8'          `8b  8Y"Ybbd8"'    `"YbbdP"'    `"YbbdP'Y8    "Y888--}}
+        {{-- About --}}
 
         <div class="_about" id="about">
             <div class="layout-box">
@@ -63,21 +34,13 @@
 
 
 
-        {{--
-         ad88888ba               88                                88               88
-        d8"     "8b              88                                88               88
-        Y8,                      88                                88               88
-        `Y8aaaaa,     ,adPPYba,  88,dPPYba,    ,adPPYba,   ,adPPYb,88  88       88  88   ,adPPYba,
-          `"""""8b,  a8"     ""  88P'    "8a  a8P_____88  a8"    `Y88  88       88  88  a8P_____88
-                `8b  8b          88       88  8PP"""""""  8b       88  88       88  88  8PP"""""""
-        Y8a     a8P  "8a,   ,aa  88       88  "8b,   ,aa  "8a,   ,d88  "8a,   ,a88  88  "8b,   ,aa
-         "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"' --}}
+        {{-- Schdule --}}
 
         <div class="_schedule" id="schedule">
             <div class="layout-box">
                 {{-- กิจกรรม --}}
                 <div class="layout-title">
-                    <span class="head">SCHEDULE</span> | กำหนดการกิจกรรม
+                    <span class="head">SCHEDULE</span> | กำหนดการรับสมัคร
                 </div>
                 <div class="layout-content schedule">
                     <div class="row">
@@ -91,46 +54,46 @@
 
                     <div class="row">
                         <div class="col col-5">
-                            26 ธันวาคม 2558
+                            14 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            เปิดการลงทะเบียนกิจกรรม ToBeIT59 โดยสามารถลงทะเบียนได้ที่ลิงค์นี้เลย <a href="/signup">ลงทะเบียน</a> <hr class="small"/>
+                            เปิดการลงทะเบียนกิจกรรม ToBeIT61 โดยสามารถลงทะเบียนได้ที่ลิงค์นี้เลย <a href="{{ URL('/signup') }}">ลงทะเบียน</a> <hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            15 มกราคม 2559
+                            25 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            ปิดการลงลงทะเบียนกิจกรรม ToBeIT59 <hr class="small"/>
+                            ปิดการลงลงทะเบียนกิจกรรม ToBeIT61 <hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            16 มกราคม 2559
+                            28 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            เปิดติว ToBeIT59 วันเเรก <hr class="small"/>
+                            กิจกรรม ToBeIT60 วันแรก <hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            30 มกราคม 2559
+                            29 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            สอบ Quiz <hr class="small"/>
+                            กิจกรรม ToBeIT60 Pre Examination
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            31 มกราคม 2559 <hr class="hr2 small"/>
+                            &nbsp; <hr class="hr2 small"/>
                         </div>
                         <div class="col col-7">
-                            ติว ToBeIT59 วันสุดท้าย <hr class="hr2 small"/>
+                            กิจกรรม ToBeIT60 วันสุดท้าย <hr class="hr2 small"/>
                         </div>
                     </div>
 
@@ -164,51 +127,19 @@
 
                     <div class="row">
                         <div class="col col-5">
-                            26 ธันวาคม 2558
+                            28 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            Hardware (P’บอสแบ๊ะ, P’ฟรอย) <br />
-                            Hardware (P’บอสแบ๊ะ, P’ฟรอย) <hr class="small"/>
+                            Logic (P’Cartoon, P’Fluke, P'Pee, P'Diff) <hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            17 มกราคม 2559
+                            29 ตุลาคม 2560 <hr class="small"/>
                         </div>
                         <div class="col col-7">
-                            Muti & Web (P’จาบอน, P’เบ็นซ์) <br />
-                            Network (P’กรณ์, P’เอิร์ธ) <hr class="small"/>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col col-5">
-                            23 มกราคม 2559
-                        </div>
-                        <div class="col col-7">
-                            Database (P’ชิน, P’โอปอ) <br />
-                            Programming (P’โอ๊ต, P’โอ๊ต) <hr class="small"/>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col col-5">
-                            24 มกราคม 2559
-                        </div>
-                        <div class="col col-7">
-                            Logic (P’แทท, P’เจม) <br />
-                            Algolithm & ปัญหาเชาว์ (P’จ๊าบ, P’ท็อป)<hr class="small"/>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col col-5">
-                            30 มกราคม 2559 <br /> <hr class="hr2 small"/>
-                        </div>
-                        <div class="col col-7">
-                            Math (P’แบงค์, P’กลอย) & Quiz<br /> <hr class="hr2 small"/>
+                            Flowchart (P’Gun, P’Khing, P'Dew, P'Nut) <hr class="small"/>
                         </div>
                     </div>
 
@@ -225,21 +156,9 @@
 
 
 
-        {{--
-          ,ad8888ba,
-         d8"'    `"8b
-        d8'
-        88              ,adPPYba,   88       88  8b,dPPYba,  ,adPPYba,   ,adPPYba,
-        88             a8"     "8a  88       88  88P'   "Y8  I8[    ""  a8P_____88
-        Y8,            8b       d8  88       88  88           `"Y8ba,   8PP"""""""
-         Y8a.    .a8P  "8a,   ,a8"  "8a,   ,a88  88          aa    ]8I  "8b,   ,aa
-          `"Y8888Y"'    `"YbbdP"'    `"YbbdP'Y8  88          `"YbbdP"'   `"Ybbd8"' --}}
+        {{-- Course --}}
 
         <div class="_course section" id="course">
-            {{-- <span class="texture">
-                {{HTML::image('image/texture_03.png')}}
-            </span> --}}
-
             <div class="layout-box">
                 <div class="layout-title">
                     <span class="head">COURSE INFO </span>| รายละเอียดการสอน
@@ -249,12 +168,6 @@
 
                 <div class="row gutters">
                     <div class="col col-6">
-
-                        {{-- <br />
-                        <div class="download">
-                            Flow chart
-                        </div> --}}
-
                         <br />
                         <abbr title="Flow chart">
                             <img src="{{asset('images/course_01.png')}}" />
@@ -262,28 +175,27 @@
                         <br /><br /><hr  class="hr2 small"/><br/>
 
                         <div class="textbox">
-                            ในวิชา hardware น้องทุกคนจะได้เรียนเกี่ยวกับส่วนประกอบของคอมพิวเตอร์ว่าคอมพิวเตอร์ที่เราใช้นั้น มีส่วนประกอบอะไรบ้าง ทำงานยังไง แล้วส่วนประกอบส่วนไหนทำหน้าที่อะไร และทำงานกับส่วนอื่นส่วนไหนบ้าง น้องที่มาเรียนจะสามารถนำความรู้ที่พี่สอนนี้ไปใช้ในการใช้กับวิชาคอมพิวเตอร์พื้นฐานได้ และสามารถนำไปชำแหละคอมที่บ้านได้ (แต่ระวังประกอบกลับไม่ได้นะ ฮา)
+                            ในการแก้ปัญหาต่างๆ โดยการใช้คอมพิวเตอร์ การจัดลำดับขั้นตอนการทำงานและเงื่อนไขต่างๆ ในการแก้ปัญหา โดยกรเปลี่ยนข้อมูลนำเข้าของปัญหา (input) ออกมาเป็นผลลัพธ์ (output) เป็นทักษะที่สำคัญอันหนึ่งที่จะนำไปสู่การใช้งานคอมพิวเตอร์ในการแก้ปัญหาได้อย่างมีประสิทธิภาพ ซึ่งการจัดลำดัขั้นการทำงานดังกล่าวนั้นจะสามารถนำมาเขียนเป็นโปรแกรมคอมพิวเตอร์ได้ต่อไป
                             <br />
                         </div>
 
                         <div style="text-align: left; line-height: 1.8;">
 
                             <br />
-                            {{-- <hr  class="hr2 small"/> --}}
-                            <br/>
+                            <br />
 
                             <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
-                            - พี่บอส (P’BossWaran) <br />
-                            - พี่ฟรอย (P’Foy) <br />
+                            - พี่การ์ตูน (P’Cartoon) <br />
+                            - พี่ฟลุ๊ค (P’Fluke) <br />
+                            - พี่พี (P’Pee) <br />
+                            - พี่ดิฟ (P’Diff) <br />
                             <br/><hr  class="hr2 small"/>
                         </div>
 
                         <div>
-                            <a href="#download1" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
+                            <a href="" class='download' disabled=""><i class="fa fa-book" aria-hidden="true"></i> Coming Soon</a>
                         </div>
-
                         <br />
-                        {{-- <hr class="radius"/> --}}
                     </div>
 
 
@@ -302,8 +214,8 @@
 
 
                         <div class="textbox">
-                            ไม่รู้ว่าน้องๆเคยสังเกตหรือเปล่าว่า โปรแกรมที่น้องๆกำลังใช้งานอยู่นี้ มันคือซอฟต์แวร์ประเภทไหน ก่อนจะได้มาซึ่งซอฟต์แวร์นั้น ต้องผ่านกระบวนการอะไรมาก่อนบ้าง ถึงออกมาเป็นซอฟต์แวร์ให้เราใช้กัน สำหรับวิชา Software นี้ น้องๆจะได้รู้ถึงการได้มาของซอฟต์แวร์ และ ซอฟต์แวร์ประเภทต่างๆ รวมทั้งเรื่องลิขสิทธิ์ของซอฟต์แวร์นอกจากนี้ในปัจจุบัน การใช้เทคโนโลยีนั้นยิ่งเปิดกว้างมากขึ้น มีผู้คนเข้าถึงได้มากยิ่งขึ้น มีความเจริญมากยิ่งขึ้น แต่สิ่งที่ตามมาคือ ผู้คนที่ขาดหลักธรรม ขาดจิตสำนึกในการใช้เทคโนโลยี ย่อมเกิดปัญหาให้แก่ผู้คนทั่วไป วิชา Ethics นี้จะมาพูดถึงกฏและข้อระเบียบต่างๆในการใช้เทคโนโลยี อาชญากรรมคอมพิวเตอร์ และวิธีการรักษาคอมพิวเตอร์ของน้องๆให้ปลอดภัยจากสิ่งเหล่านั้น รับรองว่าพี่ๆทำให้มันเข้าใจง่ายไม่ซับซ้อนแน่นอน แล้วมาติว TobeIT'59 กันเยอะๆเลยน้าา
-                            <br />
+                            เป็น ทักษะในการคิดแก้ปัญหาทางคอมพิวเตอร์ มีลักษณะเฉพาะแง่ที่ว่าเป็นทักษะในการหาคำตอบหรือวิธีแก้ปัญหา (Problem Solving Skills) โดยเครื่องมือที่ใช้แก้ปัญหาคือคอมพิวเตอร์  CTS เป็นทักษะที่ถือว่ามีความสำคัญต่อการเรียนรู้และประกอบอาชีพที่เกี่ยวข้องกับการประยุกต์ใช้เทคโนโลยีสารสนเทศ ไม่ว่าจะเป็น นักพัฒนาซอฟต์แวร์ นักระบบเครือข่ายคอมพิวเตอร์ หรือนักไอทีที่ต้องให้คอมพิวเตอร์เป็นเครื่องมือในการทำงาน CTS ทำให้เราเข้าใจปัญหาและค้นหาวิธีแก้ปัญหาได้อย่างเป็นระบบ และสามารถนำเสนอได้อย่างถูกวิธี
+                            <br/>
                         </div>
 
                         <div style="text-align: left; line-height: 1.8;">
@@ -313,13 +225,15 @@
                             <br/>
 
                             <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
-                            - พี่เจเจ (P’JayJay) <br />
+                            - พี่กรรณ (P’Gun) <br />
+                            - พี่ขิง (P’Khing) <br />
                             - พี่ดิว (P’Dew) <br />
+                            - พี่ณัฏฐ์ (P’Nut) <br />
                             <br /><hr class="hr2 small"/>
                         </div>
 
                         <div>
-                            <a href="#download2" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสาร</a>
+                            <a href="" class='download' disabled><i class="fa fa-book" aria-hidden="true"></i> Coming Soon</a>
                         </div>
 
                         <br />
@@ -332,17 +246,7 @@
 
 
 
-        {{--
-        888888888888
-             88                                                                                          ,d
-             88                                                                                          88
-             88  8b,dPPYba,  ,adPPYYba,  8b,dPPYba,   ,adPPYba,  8b,dPPYba,    ,adPPYba,   8b,dPPYba,  MM88MMM
-             88  88P'   "Y8  ""     `Y8  88P'   `"8a  I8[    ""  88P'    "8a  a8"     "8a  88P'   "Y8    88
-             88  88          ,adPPPPP88  88       88   `"Y8ba,   88       d8  8b       d8  88            88
-             88  88          88,    ,88  88       88  aa    ]8I  88b,   ,a8"  "8a,   ,a8"  88            88,
-             88  88          `"8bbdP"Y8  88       88  `"YbbdP"'  88`YbbdP"'    `"YbbdP"'   88            "Y888
-                                                                 88
-                                                                 88 --}}
+        {{-- Transport --}}
         <div class="_transport section" id="transport">
             <div class="layout-box">
                 <div class="layout-title">
@@ -360,7 +264,25 @@
                     </div>
                     <div class="layout-content">
                         <div class="textbox">
-                            จากสถานีพญาไท ผ่านสถานีราชปรารภ มักกะสัน รามคำแหง หัวหมาก บ้านทับช้าง ใช้เวลาประมาณ 20 นาทีลงที่สถานีลาดกระบังแล้วต่อรถไฟที่สถานีรถไฟลาดกระบัง
+                            จากสถานีพญาไท ผ่านสถานีราชปรารภ มักกะสัน รามคำแหง หัวหมาก บ้านทับช้าง ใช้เวลาประมาณ 30 นาทีลงที่สถานีลาดกระบังแล้วต่อรถไฟที่สถานีรถไฟลาดกระบัง หรือต่อรถสองแถวสาย 777 (เขียนว่าเข้าเทคโนฯ)
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="layout-title" style="text-align:left; padding: 10px;">
+                        <i class="fa fa-bus" aria-hidden="true"></i> SONGTAW
+                    </div>
+                    <div class="layout-content">
+                        <div class="textbox">
+                            <ul>
+                                <li>- วงกลมวนซ้ายแอร์พอร์ตลิงค์ 7 บาท 5.00-22.00 15 นาที</li>
+                                <li>- หัวตะเข้ – เทคโน – หนองจอก	7 บาท 5.00-22.00 10 นาที</li>
+                                <li>- หัวตะเข้ – เทคโน – ฮอนด้า 7 บาท 5.00-22.00 10 นาที</li>
+                                <li>- วัดราชโกษา – เทคโน – ร่มเกล้า 7 บาท 5.00-20.00 20 นาที</li>
+                                <li>- หัวตะเข้ – เทคโน – วัดอุทัย 10 บาท 5.00-17.30 40 นาที</li>
+                                <li>- หัวตะเข้ – เทคโน – บึงบัว 10 บาท 5.00-17.30 30 นาที</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -371,7 +293,28 @@
                     </div>
                     <div class="layout-content">
                         <div class="textbox">
-                            รถตู้โดยสารปรับอากาศ หมอชิตใหม่-อนุสาวรีย์–พระจอมเกล้าลาดกระบัง(ทางด่วน) ขึ้นรถบริเวณใต้ทางด่วนทางทิศเหนือของอนุสาวรีย์ชัยสมรภูมิ ค่าโดยสาร 40 บาท ใช้เวลาประมาณ 30-40 นาที
+                            <ul>
+                                <li>รถตู้ด่วนพิเศษ</li>
+                                <li>
+                                    <ul>
+                                        <li>- หมอชิตใหม่ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                        <li>- อนุสาวรีย์ชัย - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                        <li>- รังสิตฟิวเจอร์ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                        <li>- แฮปปี้แลนด์ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                    </ul>
+                                </li>
+                                <li>รถตู้ประจำทาง</li>
+                                <li>
+                                    <ul>
+                                        <li>- หัวตะเข้ – หนองจอก</li>
+                                        <li>- มีนบุรี – บึงบัว – หัวตะเข้</li>
+                                        <li>- มีนบุรี – นิคม – หัวตะเข้</li>
+                                        <li>- หัวตะเข้ – ซีคอนสแควร์<span class="req">*</span></li>
+                                        <li>- หัวตะเข้ – บางพลี<span class="req">*</span></li>
+                                        <li><span class="req">*</span> ลงที่หน้าตลาดหัวตะเข้ รถไม่ได้เข้ามาภายในสถาบัน</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -396,15 +339,15 @@
                                     {{-- <hr class="hr2 small radius"/> --}}
                                     <ul>
                                         <li>
-                                            -> ออกจากมอเตอร์เวย์ที่ถนนร่มเกล้า ถนนอ่อนนุช ถนนฉลองกรุง
+                                            -> ออกจากมอเตอร์เวย์ที่จุดกลับรถใต้สะพานเล็กๆ ให้เลยทางออกสุวรรณภูมิมาก่อน
                                         </li>
                                         <li>
-                                            -> ยูเทิร์นกลับรถที่สถานีขนส่งสินค้า ออกจากมอเตอร์เวย์ที่ทางเข้าสนามบินสุวรรณภูมิ ทางเบียงถนนคู่ขนานมอเตอร์เวย์ ถนนฉลองกรุง (เส้นทางแนะนำ เลี่ยงรถติด) [ชมวิดิทัศน์วิธีการเดินทาง]
+                                            -> ให้สังเกตอาคารเรียนคณะเทคโนโลยีสารสนเทศ จะเป็นอาคารเรียน 6 ชั้นติดกระจก หากเลยมาแล้วให้ชิดซ้าย ใต้สะพาน เลยไปประมาณ 800 เมตร จะมีทางออกเล็กๆ ให้กลับรถ จากนั้นเลี้ยวขวา เมื่อถึงใต้สะพานแล้วให้เลี้ยวซ้าย
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    - จากชลบุรี ใช้เส้นทางด่วนพิเศษ กรุงเทพฯ–ชลบุรี(มอเตอร์เวย์) ออกจากมอเตอร์เวย์ที่ทางเข้าสนามบินสุวรรณภูมิ ทางเบี่ยงถนนคู่ขนานมอเตอร์เวย์ ถนนฉลองกรุง
+                                    - เริ่มจากชลบุรี ใช้เส้นทางด่วนพิเศษ กรุงเทพฯ–ชลบุรี(มอเตอร์เวย์) ออกจากมอเตอร์เวย์ที่ทางเข้าสนามบินสุวรรณภูมิ ทางเบี่ยงถนนคู่ขนานมอเตอร์เวย์ ถนนฉลองกรุง
                                 </li>
                             </ul>
                         </div>
@@ -417,13 +360,81 @@
                     </div>
                     <div class="layout-content">
                         <div class="textbox">
-                            สายตะวันออก : สถานีต้นทางกรุงเทพฯ(หัวลำโพง)ผ่าน พญาไท ราชปรารภ มักกะสัน อโศก คลองตัน หัวหมาก บ้านทับช้าง ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
-                            <br />
-                            *แนะนำให้มาขบวน 275 และ 283
-                            สายชานเมือง (รังสิต-หัวตะเข้) : สถานีต้นทางรังสิตผ่าน ดอนเมือง การเคหะกม.19 หลักสี่ ทุ่งสองห้อง ตลาดใหม่ดอนเมือง บางเขน นิคมรถไฟกม.11 ชุมทางบางซื่อ ประดิพัทธ์ สามเสน โรงพยาบาลรามาธิบดี อุรุพงษ์ พญาไทย ราชปรารภ มักกะสัน อโศก คลองตัน สุขุมวิท71 หัวหมาก บ้านทับช้าง ซอยวัดลานบุญ ลาดกระบัง สถานีปลายทางป้ายหยุดรถไฟพระจอมเกล้า หรือสถานีหัวตะเข้
-                            <br />
-                            *รถไฟขบวน 376 ออกจากรังสิตเวลา 05.35 น. ถึงหัวตะเข้เวลา 07.40 น.โดยประมาณ (รถขบวนนี้ไม่เข้าหัวลำโพง)
+                            <ul>
+                                <li>สายตะวันออก : สถานีต้นทางกรุงเทพฯ(หัวลำโพง) ผ่าน ยมราช อุรุพงศ์ พญาไท มักกะสัน อโศก คลองตัน สุขุมวิท71 หัวหมาก บ้านทับช้าง ซอยวัดลานบุญ ลาดกระบัง พระจอมเกล้า ปลายทางสถานีหัวตะเข้</li>
+                                <li>ขบวนจากกรุงเทพ (หัวลำโพง)</li>
+                                <li>
+                                    <ul>
+                                        <li>- 379 (กรุงเทพ - หัวตะเข้) ถึงหัวตะเข้ 05.10 <span class="req">*</span>วันจันทร์-ศุกร์</li>
+                                        <li>- 275 (กรุงเทพ - อรัญประเทศ) ถึงหัวตะเข้ 07.02</li>
+                                        <li>- 283 (กรุงเทพ - บ้านพลูตาหลวง) ถึงหัวตะเข้ 08.13 <span class="req">*</span>วันจันทร์-ศุกร์</li>
+                                        <li>- 285 (กรุงเทพ - ชุมทางฉะเชิงเทรา) ถึงหัวตะเข้ 08.13 <span class="req">*</span>วันเสาร์-อาทิตย์-วันหยุดพิเศษ</li>
+                                        <li>- 281 (กรุงเทพ - กบินทร์บุรี) ถึงหัวตะเข้ 08.56</li>
+                                    </ul>
+                                </li>
+                                <li>ขบวนออกจากชุมทางฉะเชิงเทรา</li>
+                                <li>
+                                    <ul>
+                                        <li>- 384 (ชุมทางฉะเชิงเทรา – กรุงเทพ) ถึงหัวตะเข้ 06.25 <span class="req">*</span>วันจันทร์-ศุกร์</li>
+                                        <li>- 372 (ปราจีนบุรี – กรุงเทพ) ถึงหัวตะเข้ 06.59</li>
+                                        <li>- 388 (ชุมทางฉะเชิงเทรา – กรุงเทพ) ถึงหัวตะเข้ 07.34</li>
+                                        <li>- 278 (กบินทร์บุรี – กรุงเทพ) ถึงหัวตะเข้ 09.09</li>
+                                    </ul>
+                                </li>
+                                <li>ขบวนออกจากรังสิต</li>
+                                <li>
+                                    <ul>
+                                        <li>376 (รังสิต - หัวตะเข้) ออกรังสิต 05.35 ถึงหัวตะเข้ 07.40 <span class="req">*</span>รถขบวนนี้ไม่เข้าหัวลำโพง และไม่มีบริการวันเสาร์ อาทิตย์ วันหยุดพิเศษ</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+
+                    <br />
+
+                    <div class="layout-title" style="text-align:left; padding: 10px;">
+                        <i class="fa fa-plane" aria-hidden="true"></i> SUVARNABHUMI AIRPORT BUS TERMINAL
+                    </div>
+                    <div class="layout-content">
+                        <div class="textbox">
+                            <ul>
+                                <li>รถตู้</li>
+                                <li>
+                                    <ul>
+                                        <li>- 549 มีนบุรี – สุวรรณภูมิ</li>
+                                        <li>- 552 อ่อนนุช - สุวรรณภูมิ</li>
+                                        <li>- 552A ปากน้ำ – สุวรรณภูมิ (เฉพาะเช้า-เย็น)</li>
+                                        <li>- 554 สะพานใหม่ – สุวรรณภูมิ (เฉพาะเช้า-เย็น)</li>
+                                        <li>- 555 สุวรรณภูมิ - ดอนเมือง</li>
+                                        <li>- 559 สุวรรณภูมิ – รังสิตฟิวเจอร์</li>
+                                    </ul>
+                                </li>
+                                <li>รถเมล์</li>
+                                <li>
+                                    <ul>
+                                        <li>- 554 รังสิต – สุวรรณภูมิ (ทางด่วนลงรามอินทรา)</li>
+                                        <li>- 555 รังสิต – สุวรรณภูมิ (ทางด่วนลงดินแดง)</li>
+                                        <li>- 558 พระราม 2 - สุวรรณภูมิ (ทางด่วนลงสุขสวัสดิ์)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="layout-title" style="text-align:left; padding: 10px;">
+                        <i class="fa fa-subway" aria-hidden="true"></i> SONGTAW
+                    </div>
+                    <div class="layout-content">
+                        <div class="textbox">
+                            จากสถานีพญาไท ผ่านสถานีราชปรารภ มักกะสัน รามคำแหง หัวหมาก บ้านทับช้าง ใช้เวลาประมาณ 30 นาทีลงที่สถานีลาดกระบังแล้วต่อรถไฟที่สถานีรถไฟลาดกระบัง หรือต่อรถสองแถวสาย 777 (เขียนว่าเข้าเทคโนฯ)
+                        </div>
+                    </div>
+                    <div>
+                        <br />
+                        <a href="{{ URL('/documents/transport.pdf') }}" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสารคู่มือการเดินทาง</a>
                     </div>
                 </div>
             </div>
@@ -431,15 +442,7 @@
 
 
 
-        {{--
-        88888888ba   88
-        88      "8b  88                         ,d
-        88      ,8P  88                         88
-        88aaaaaa8P'  88,dPPYba,    ,adPPYba,  MM88MMM  ,adPPYba,   ,adPPYba,
-        88""""""'    88P'    "8a  a8"     "8a   88    a8"     "8a  I8[    ""
-        88           88       88  8b       d8   88    8b       d8   `"Y8ba,
-        88           88       88  "8a,   ,a8"   88,   "8a,   ,a8"  aa    ]8I
-        88           88       88   `"YbbdP"'    "Y888  `"YbbdP"'   `"YbbdP"' --}}
+        {{-- Photo --}}
 
         <div class="_photos" id="photos">
             <div class="layout-box">
@@ -472,15 +475,7 @@
 
 
 
-        {{--
-        88888888888  db         ,ad8888ba,
-        88          d88b       d8"'    `"8b
-        88         d8'`8b     d8'        `8b
-        88aaaaa   d8'  `8b    88          88
-        88"""""  d8YaaaaY8b   88          88
-        88      d8""""""""8b  Y8,    "88,,8P
-        88     d8'        `8b  Y8a.    Y88P
-        88    d8'          `8b  `"Y8888Y"Y8a --}}
+        {{-- Faq --}}
 
         <div class="_faq section" id="faq">
             <div class="layout-box">
@@ -518,34 +513,19 @@
 
 
 
-        {{-- /**
-         	 * Block comment
-         	 *
-         	 * @param type
-         	 * @return void
-
-        88888888888
-        88                                  ,d
-        88                                  88
-        88aaaaa   ,adPPYba,    ,adPPYba,  MM88MMM  ,adPPYba,  8b,dPPYba,
-        88"""""  a8"     "8a  a8"     "8a   88    a8P_____88  88P'   "Y8
-        88       8b       d8  8b       d8   88    8PP"""""""  88
-        88       "8a,   ,a8"  "8a,   ,a8"   88,   "8b,   ,aa  88
-        88        `"YbbdP"'    `"YbbdP"'    "Y888  `"Ybbd8"'  88
-        */
-        	 --}}
+        {{-- Footer --}}
         <div class="_footer">
             <div class="layout-box">
 
                 <div class="row around">
                     <div class="col" style="text-align: left; line-height: 1.8;">
-                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่มิลค์กี้: 085 - 161 - 7623 <br />
-                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่แพร: 082 - 792 - 0845 <br />
+                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่เซนท์: 086 - 086 - 4192 <br />
+                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่หมี: 086 - 058 - 0919 <br />
                     </div>
                     <div class="col" style="text-align: left; line-height: 1.8;">
-                        <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook</a> <br />
-                        <a href="#"><i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook</a> <br />
-                        <a href="#"><i class="fa fa-weixin" aria-hidden="true"></i> ส่งข้อความผ่าน Facebook</a> <br />
+                        <a href="https://www.facebook.com/tobeitkmitl/"><i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook</a> <br />
+                        <a href="https://www.facebook.com/groups/kmitltobeit/"><i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook</a> <br />
+                        {{--<a href="#"><i class="fa fa-weixin" aria-hidden="true"></i> ส่งข้อความผ่าน Facebook</a> <br />--}}
                     </div>
                 </div>
             </div>
