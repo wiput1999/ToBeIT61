@@ -1,12 +1,12 @@
 {
-    "/js/landing.js": "/js/landing.js",
-    "/css/backend.css": "/css/backend.css",
-    "/css/app.css": "/css/app.css",
-    "/js/scroll.js": "/js/scroll.js",
-    "/js/jquery.min.js": "/js/jquery.min.js",
-    "/js/bootstrap.min.js": "/js/bootstrap.min.js",
-    "/js/popper.min.js": "/js/popper.min.js",
-    "/js/list.min.js": "/js/list.min.js",
-    "/js/kube.min.js": "/js/kube.min.js",
-    "/js/jquery-ui.js": "/js/jquery-ui.js"
+    "/2017/js/landing.js": "/2017/js/landing.js",
+    "/2017/css/backend.css": "/2017/css/backend.css",
+    "/2017/css/app.css": "/2017/css/app.css",
+    "/2017/js/scroll.js": "/2017/js/scroll.js",
+    "/2017/js/jquery.min.js": "/2017/js/jquery.min.js",
+    "/2017/js/bootstrap.min.js": "/2017/js/bootstrap.min.js",
+    "/2017/js/popper.min.js": "/2017/js/popper.min.js",
+    "/2017/js/list.min.js": "/2017/js/list.min.js",
+    "/2017/js/kube.min.js": "/2017/js/kube.min.js",
+    "/2017/js/jquery-ui.js": "/2017/js/jquery-ui.js"
 }
