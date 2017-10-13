@@ -9,21 +9,21 @@
                 <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
             </li>
             <li class="nav-item {{ \Request::is('backend/list/1') ? 'active':'' }}">
-                <a class="nav-link" href="{{ url('/backend/list/1') }}">Round 1</a>
+                <a class="nav-link" href="{{ d_url('/backend/list/1') }}">Round 1</a>
             </li>
             <li class="nav-item {{ \Request::is('backend/list/2') ? 'active':'' }}">
-                <a class="nav-link" href="{{ url('/backend/list/2') }}">Round 2</a>
+                <a class="nav-link" href="{{ d_url('/backend/list/2') }}">Round 2</a>
             </li>
             <li class="nav-item {{ \Request::is('backend/list/3') ? 'active':'' }}">
-                <a class="nav-link" href="{{ url('/backend/list/3') }}">Round 3</a>
+                <a class="nav-link" href="{{ d_url('/backend/list/3') }}">Round 3</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item {{ \Request::is('backend/changepassword') ? 'active':'' }}">
-                <a href="{{ URL('/backend/changepassword') }}" class="nav-link">Change Password</a>
+                <a href="{{ d_url('/backend/changepassword') }}" class="nav-link">Change Password</a>
             </li>
             <li class="nav-item {{ \Request::is('backend/config') ? 'active':'' }}">
-                <a href="{{ URL('/backend/config') }}" class="nav-link">Config</a>
+                <a href="{{ d_url('/backend/config') }}" class="nav-link">Config</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('logout') }}"

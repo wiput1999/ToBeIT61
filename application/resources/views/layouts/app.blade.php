@@ -75,8 +75,8 @@
         <p id="login-footer">&copy; 2017 | ToBeIT'61</p>
     </div>
 
-    <script src="{{ mix('/js/jquery.min.js') }}"></script>
-    <script src="{{ mix('/js/popper.min.js') }}"></script>
-    <script src="{{ mix('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ d_asset(mix('/js/jquery.min.js')) }}"></script>
+    <script src="{{ d_asset(mix('/js/popper.min.js')) }}"></script>
+    <script src="{{ d_asset(mix('/js/bootstrap.min.js')) }}"></script>
 </body>
 </html>

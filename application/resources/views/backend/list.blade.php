@@ -53,7 +53,7 @@
                         <td>
                             <div class="row">
                                 <div class="col" id="check-button">
-                                    <form action="{{url('/backend/check/saturday', $register['id'])}}" method="post">
+                                    <form action="{{d_url('/backend/check/saturday/'. $register['id'])}}" method="post">
                                         {!! csrf_field() !!}
                                         @if($register['saturday'] == null)
                                             <button type="submit" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Saturday"><i class="fa fa-sign-in"></i> Saturday</button>
@@ -63,7 +63,7 @@
                                     </form>
                                 </div>
                                 <div class="col" id="check-button">
-                                    <form action="{{url('/backend/check/sunday', $register['id'])}}" method="post">
+                                    <form action="{{d_url('/backend/check/sunday/'. $register['id'])}}" method="post">
                                         {!! csrf_field() !!}
                                         @if($register['sunday'] == null)
                                             <button type="submit" class="btn btn-primary btn-sm" data-toggle="tooltip" title="Sunday"><i class="fa fa-sign-in"></i> Sunday</button>

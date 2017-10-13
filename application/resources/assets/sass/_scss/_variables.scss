@@ -131,8 +131,8 @@ $table-font-size: $font-size - 1px !default;
 $table-base-line: 24px !default;
 
 // Padding
-$table-padding-tb: 1rem !default;
-$table-padding-rl: 1rem !default;
+$table-padding-tb: 0 !default;
+$table-padding-rl: 0 !default;
 
 // Border
 $table-border: 1px solid rgba(0, 0, 0, .05) !default;

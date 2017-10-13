@@ -434,7 +434,7 @@
                     </div>
                     <div>
                         <br />
-                        <a href="{{ URL('/documents/transport.pdf') }}" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสารคู่มือการเดินทาง</a>
+                        <a href="{{ d_url('/documents/transport.pdf') }}" class='download'><i class="fa fa-book" aria-hidden="true"></i> ดาวน์โหลดเอกสารคู่มือการเดินทาง</a>
                     </div>
                 </div>
             </div>

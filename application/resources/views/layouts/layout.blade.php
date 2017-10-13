@@ -8,7 +8,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="google" content="notranslate" />
         <meta name="description" content="@lang('meta.description')" />
-        <link rel="shortcut icon" href="{{URL('/favicon.png')}}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{d_url('/favicon.png')}}" type="image/x-icon"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Title -->
@@ -20,12 +20,12 @@
 
 
         <!-- Style -->
-        <link rel="stylesheet" href="{{ d_asset('/css/app.css') }}">
+        <link rel="stylesheet" href="{{ d_asset(mix('/css/app.css')) }}">
         <!-- Js -->
-        <script src="{{ d_asset('/js/jquery.min.js') }}"></script>
-        <script src="{{ d_asset('/js/landing.js') }}"></script>
-        <script src="{{ d_asset('/js/scroll.js') }}"></script>
-        <script src="{{ d_asset('/js/kube.min.js') }}"></script>
+        <script src="{{ d_asset(mix('/js/jquery.min.js')) }}"></script>
+        <script src="{{ d_asset(mix('/js/landing.js')) }}"></script>
+        <script src="{{ d_asset(mix('/js/scroll.js')) }}"></script>
+        <script src="{{ d_asset(mix('/js/kube.min.js')) }}"></script>
 
 
 

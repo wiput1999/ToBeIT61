@@ -13,7 +13,7 @@
         </div>
     @endif
     <br />
-    <form method="post" action="{{ URL('/backend/edit', $data['id']) }}">
+    <form method="post" action="{{ d_url('/backend/edit/'. $data['id']) }}">
         {{ csrf_field() }}
         <div class="row" id="profile-form-row">
             <div class="col-3">
@@ -182,7 +182,7 @@
         </div>
         <div class="row">
             <div class="col-2">
-                <button class="btn btn-success btn-md" href="{{ URL('/backend/edit', $data['id']) }}" title="Save"><i class="fa fa-save"></i> Save</button>
+                <button class="btn btn-success btn-md" title="Save"><i class="fa fa-save"></i> Save</button>
             </div>
         </div>
     </form>

@@ -6,7 +6,7 @@
     <div class="row">
         <p style="color: #FF0000;">Be careful! Config will not validate your input! A mistake can damage application!</p>
     </div>
-    <form action="{{ URL('/backend/config') }}" method="post">
+    <form action="{{ d_url('/backend/config') }}" method="post">
         {{ csrf_field() }}
         @foreach($configs as $config)
             <div class="row">

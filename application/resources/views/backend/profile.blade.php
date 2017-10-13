@@ -171,10 +171,10 @@
     </div>
     <div class="row">
         <div class="col-2">
-            <a class="btn btn-info btn-md" href="{{ URL('/backend/edit', $data['id']) }}" title="Edit"><i class="fa fa-pencil"></i> Edit</a>
+            <a class="btn btn-info btn-md" href="{{ d_url('/backend/edit/'. $data['id']) }}" title="Edit"><i class="fa fa-pencil"></i> Edit</a>
         </div>
         <div class="col-2">
-            <form action="{{ URL('/backend/profile', $data['id'])  }}" method="post">
+            <form action="{{ d_url('/backend/profile/'. $data['id'])  }}" method="post">
                 {!! csrf_field() !!}
                 {!! method_field('DELETE') !!}
                 <button type="submit" class="btn btn-danger btn-md" title="Delete"><i class="fa fa-times"></i> Delete</button>
