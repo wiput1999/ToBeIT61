@@ -20,7 +20,7 @@
 
 .signup {
     margin-left: 144px;
-    background-image: url('../images/bg.png');
+    background-image: url('../image/bg.png');
     background-size: cover;
     height: 100%;
     font-size: 25px;
@@ -42,7 +42,6 @@
     margin: 10px 0 10px 0;
     border-radius: 5px;
     color: $red1;
-    background-color: $white1;
     ul {
         padding-left: 10px;
     }
@@ -60,7 +59,8 @@
     color: $green2;
     text-align: center;
     font-size: 50px;
-    background-color: $white1;
+    letter-spacing: 1px;
+    line-height: 1.5;
 
     ul {
         padding-left: 10px;
@@ -72,25 +72,7 @@
 
 }
 
-.form-close {
-    border: 1px solid $red1;
-    padding: 5%;
-    margin: 10px 0 10px 0;
-    border-radius: 5px;
-    color: $red1;
-    text-align: center;
-    font-size: 50px;
-    background-color: $white1;
 
-    ul {
-        padding-left: 10px;
-    }
-    li {
-        padding: 5px;
-        list-style-type: disc;
-    }
-
-}
 
 
 

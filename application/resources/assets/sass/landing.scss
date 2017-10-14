@@ -1,12 +1,13 @@
 @import '_media';
 @import '_colors';
 @import '_webkit';
-#mb {
-    display: none;
-}
-#pc {
-    display: block;
-}
+// #mb {
+//     display: none;
+// }
+// #pc {
+//     display: block;
+// }
+//
 
 
 // 88
@@ -92,16 +93,17 @@ a.download:hover {
 //                                                                      aa,    ,88
 //                                                                       "Y8bbdP"
 .landing {
-    margin-left: 144px;
-    background-image: url('../images/bg.png');
+    margin-left: 149px;
+    background-image: url('../image/bg.png');
     background-size: cover;
     height: 100%;
-    font-size: 23px;
+    font-size: 25px;
     color: #f2f2f2;
+    letter-spacing: 1px;
+
 
     .head {
         font-weight: bold;
-        font-size: 30px;
     }
 
     .fixed img{
@@ -123,34 +125,18 @@ a.download:hover {
     // 88        88   `"YbbdP"'   88      88      88   `"Ybbd8"'
     ._home {
         min-height: 500px;
-        background-image: url('../images/home_bg.jpg');
+        background-image: url('../image/home_bg.jpg');
         background-position: center;
         background-size: cover;
         position: relative;
         text-align: center;
-        transition: min-height 0.3s;
+        // transition: min-height 0.3s;
         img {
             width: 50%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-
-        }
-        .box {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            font-size: 170px;
-            color: #f2f2f2;
-            overflow: hidden;
-            span {
-                position: absolute;
-                top: 150px;
-                right: 0;
-                font-size: 50px;
-            }
         }
     }
 
@@ -167,7 +153,7 @@ a.download:hover {
     // d8'          `8b  8Y"Ybbd8"'    `"YbbdP"'    `"YbbdP'Y8    "Y888
     ._about {
         position: relative;
-        font-size: 23px;
+        // font-size: 23px;
         .texture img{
             width: 15%;
             position: absolute;
@@ -189,7 +175,7 @@ a.download:hover {
     //  "Y88888P"    `"Ybbd8"'  88       88   `"Ybbd8"'   `"8bbdP"Y8   `"YbbdP'Y8  88   `"Ybbd8"'
     ._schedule {
         position: relative;
-        font-size: 23px;
+        // font-size: 23px;
         .texture img{
             width: 15%;
             position: absolute;
@@ -237,16 +223,13 @@ a.download:hover {
         }
 
         .row {
-            font-size: 20px;
+            // font-size: 20px;
             text-align: center;
             img {
                 width: 60%;
                 height: auto;
                 @include transition (transform, 0.8s);
             }
-            // img:hover {
-            //     transform: rotateY(180deg);
-            // }
 
         }
         // .layout-content {
@@ -287,11 +270,7 @@ a.download:hover {
     // */
     //
     ._transport {
-        font-size: 20px;
-    }
-
-    .transport-h2 {
-        color: #FFF;
+        // font-size: 20px;
     }
 
 
@@ -308,42 +287,69 @@ a.download:hover {
     // */
     //
     ._photos {
-        .slider {
-            width: 100%;
-
-            .slider-wrap {
+        // .slider {
+        //     width: 100%;
+        //
+        //     .slider-wrap {
+        //         width: 100%;
+        //         position: relative;
+        //         float: left;
+        //
+        //         img {
+        //             display: none;
+        //             width: 100%;
+        //             height: auto;
+        //         }
+        //
+        //         .arrow {
+        //             i {
+        //                 position: absolute;
+        //                 font-size: 100px;
+        //                 top: 50%;
+        //                 transform: translateY(-50%);
+        //                 padding: 10px;
+        //                 cursor: pointer;
+        //                 z-index: 2 !important;
+        //                 @include transition(opacity, 0.3s);
+        //             }
+        //             i:last-child {
+        //                 right: 0;
+        //             }
+        //             i:hover {
+        //                 opacity: 0.7;
+        //             }
+        //         }
+        //     }
+        // }
+        // .active {
+        //     display: block !important;
+        // }
+        .Wallop {
+            position: relative;
+            img {
                 width: 100%;
-                position: relative;
-                float: left;
-
-                img {
-                    display: none;
-                    width: 100%;
-                    height: auto;
-                }
-
-                .arrow {
-                    i {
-                        position: absolute;
-                        font-size: 100px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        padding: 10px;
-                        cursor: pointer;
-                        z-index: 2 !important;
-                        @include transition(opacity, 0.3s);
-                    }
-                    i:last-child {
-                        right: 0;
-                    }
-                    i:hover {
-                        opacity: 0.7;
-                    }
-                }
+                height: auto;
             }
-        }
-        .active {
-            display: block !important;
+
+            button {
+                background: none;
+                position: absolute;
+                font-size: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px;
+                cursor: pointer;
+                z-index: 2 !important;
+                @include transition(opacity, 0.3s);
+            }
+
+            button:last-child {
+                right: 0;
+            }
+
+            button:hover {
+                opacity: 0.7;
+            }
         }
     }
 
@@ -382,23 +388,15 @@ a.download:hover {
 //
 
 @media #{$table} {
-    #pc {
-        display: none;
-    }
-    #mb {
-        display: block;
-    }
     .landing {
-        margin-left: 55px;
+        margin-left: 54px;
 
         // Layout
         .layout-box {
             .layout-title {
-                font-size: 55px;
             }
             .layout-content {
                 .textbox {
-                    font-size: 50px;
                     text-indent: 50px;
                     line-height: 1.5;
                 }
@@ -450,19 +448,16 @@ a.download:hover {
 //
 
 @media #{$smartphone} {
-    .texture, .fixed {
-        display: none;
-    }
     .landing {
-
+        margin-left: 56px;
         // Layout
         .layout-box {
             .layout-title {
-                font-size: 32px;
+                font-size: 20px;
             }
             .layout-content {
                 .textbox {
-                    font-size: 23px;
+                    // font-size: 23px;
                     text-indent: 15px;
                     line-height: 1.2;
                 }
@@ -471,18 +466,6 @@ a.download:hover {
                     td {
                         padding: 5px;
                     }
-                    font-size: 23px;
-                }
-            }
-        }
-
-
-        ._home {
-            .box {
-                font-size: 75px;
-                span {
-                    top: 70px;
-                    font-size: 30px;
                 }
             }
         }
@@ -491,6 +474,13 @@ a.download:hover {
             i {
                 font-size: 50px !important;
             }
+        }
+
+        ._about, ._faq, ._footer, ._transport, .schedule, ._course {
+            font-weight: normal;
+            font-size: 17px;
+            letter-spacing: 1px;
+            line-height: 2;
         }
     }
 }
