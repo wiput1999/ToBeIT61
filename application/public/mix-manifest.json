@@ -1,7 +1,13 @@
 {
-    "/css/backend.css": "/css/backend.css",
-    "/js/jquery.min.js": "/js/jquery.min.js",
-    "/js/bootstrap.min.js": "/js/bootstrap.min.js",
-    "/js/popper.min.js": "/js/popper.min.js",
-    "/js/list.min.js": "/js/list.min.js"
+    "/2017/js/landing.js": "/2017/js/landing.js",
+    "/2017/css/backend.css": "/2017/css/backend.css",
+    "/2017/css/app.css": "/2017/css/app.css",
+    "/2017/js/scroll.js": "/2017/js/scroll.js",
+    "/2017/js/jquery.min.js": "/2017/js/jquery.min.js",
+    "/2017/js/bootstrap.min.js": "/2017/js/bootstrap.min.js",
+    "/2017/js/popper.min.js": "/2017/js/popper.min.js",
+    "/2017/js/list.min.js": "/2017/js/list.min.js",
+    "/2017/js/kube.min.js": "/2017/js/kube.min.js",
+    "/2017/js/jquery-ui.js": "/2017/js/jquery-ui.js",
+    "/2017/js/Wallop.min.js": "/2017/js/Wallop.min.js"
 }

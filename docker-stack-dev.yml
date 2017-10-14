@@ -10,12 +10,12 @@ services:
       MYSQL_DATABASE: tobeit61
       MYSQL_USER: tobeit
       MYSQL_PASSWRD: "ToBeIT#2017"
-  # tobeit:
-  #   image: tobeit
-  #   depends_on:
-  #     - mysql
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - ./application:/var/www/html
+  tobeit:
+    image: tobeit
+    depends_on:
+      - mysql
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./application:/var/www/html

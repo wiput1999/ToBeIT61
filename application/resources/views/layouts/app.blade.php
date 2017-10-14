@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('/2017/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -75,8 +75,8 @@
         <p id="login-footer">&copy; 2017 | ToBeIT'61</p>
     </div>
 
-    <script src="{{ mix('/js/jquery.min.js') }}"></script>
-    <script src="{{ mix('/js/popper.min.js') }}"></script>
-    <script src="{{ mix('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ mix('/2017/js/jquery.min.js') }}"></script>
+    <script src="{{ mix('/2017/js/popper.min.js') }}"></script>
+    <script src="{{ mix('/2017/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

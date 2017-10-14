@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', 'indexController@getIndex');
+Route::get('/', 'indexController@getIndex')->name('landing');
+
+Route::get('/signup', 'registerController@getRegister')->name('signup');
+
+Route::post('/signup', 'registerController@doRegister');
 
 //Default Authentication Routes
 Auth::routes();
@@ -30,4 +34,18 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/backend/check/sunday/{id}', 'dashboardController@doCheckSunday');
 
     Route::get('/backend/profile/{id}', 'dashboardController@getProfile');
+
+    Route::get('/backend/edit/{id}', 'dashboardController@getEdit');
+
+    Route::post('/backend/edit/{id}', 'dashboardController@doEdit');
+
+    Route::delete('/backend/profile/{id}', 'dashboardController@doDelete');
+
+    Route::get('/backend/changepassword', 'dashboardController@getChangePassword');
+
+    Route::post('/backend/changepassword', 'dashboardController@doChangePassword');
+
+    Route::get('/backend/config', 'dashboardController@getConfig');
+
+    Route::post('/backend/config', 'dashboardController@doConfig');
 });
