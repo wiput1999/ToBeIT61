@@ -79,7 +79,7 @@
                             28 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 วันแรก <hr class="small"/>
+                            กิจกรรม ToBeIT61 วันแรก <hr class="small"/>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@
                             29 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 Pre Examination
+                            กิจกรรม ToBeIT61 Pre Examination
                         </div>
                     </div>
 
