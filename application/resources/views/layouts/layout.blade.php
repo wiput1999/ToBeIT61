@@ -15,8 +15,7 @@
         <title>@yield('title')ToBeIT61 KMITL</title>
 
         <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 
 
         <!-- Style -->
