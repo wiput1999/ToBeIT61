@@ -10,7 +10,9 @@ $(function() {
         var base = document.location.origin + "/2017";
         var current = window.location.pathname.replace(/^\//, '');
         console.log(current);
-        if (current == 'signup') {
+
+
+        if (current == '2017/signup') {
             // console.log(base + '#' + window.location.hash.substr(1));
             window.location.replace(base + '#' + window.location.hash.substr(1));
         }
