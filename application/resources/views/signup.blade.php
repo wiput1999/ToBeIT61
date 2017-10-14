@@ -116,19 +116,19 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>อีเมล: </label>
-                                <input type="email" name="email" placeholder="*tobe@it.kmitl.ac.th" required>
+                                <input type="email" name="email" placeholder="เช่น tobe@it.kmitl.ac.th" required>
                             </div>
                         </div>
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>เบอร์โทรศัพท์: </label>
-                                <input type="text" name="tel" placeholder="เช่น 0818888888 ไม่ต่องมี -" required>
+                                <input type="text" name="tel" placeholder="เช่น 0818888888" maxlength="10" required>
                             </div>
                         </div>
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>เบอร์โทรศัพท์ผู้ปกครอง: </label>
-                                <input type="text" name="parent" placeholder="เช่น 0818888888 ไม่ต่องมี -" required>
+                                <input type="text" name="parent" placeholder="เช่น 0818888888" maxlength="10" required>
                                 <div class="desc">สำหรับติดต่อผู้ปกครอง กรณีเกิดเหตุฉุกเฉิน</div>
                             </div>
                         </div>
@@ -140,13 +140,13 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>โรคประจำตัว: </label>
-                                <input type="text" name="disease" placeholder="เช่น หอบ ภูมิแพ้ หากไม่มัให้กรอก -" required>
+                                <input type="text" name="disease" placeholder="เช่น หอบ ภูมิแพ้ -" required>
                             </div>
                         </div>
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>อาหารที่แพ้: </label>
-                                <input type="text" name="food" placeholder="เช่น อาหารทะเล หากไม่มัให้กรอก -" required>
+                                <input type="text" name="food" placeholder="เช่น อาหารทะเล -" required>
                             </div>
                         </div>
                         <div class="col col-4">
