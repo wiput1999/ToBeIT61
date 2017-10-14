@@ -172,7 +172,7 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                                 <select name="appointment" required>
                                     <option value="1">Airport Rail Link ลาดกระบัง</option>
                                     <option value="2">สนามบินสุวรรณภูมิ</option>
-                                    <option value="3">สถาณีรถไฟหัวตะเข้</option>
+                                    <option value="3">สถานีรถไฟหัวตะเข้</option>
                                     <option value="4">หน้าคณะ IT</option>
                                     <option value="5">วินรถตู้</option>
                                 </select>
