@@ -13,7 +13,10 @@ use DB;
 class dashboardController extends Controller
 {
     public function getDashboard() {
-        return view('backend.dashboard');
+        $round = Config::where('key', 'REGISTER_ROUND')->get()[0]['value'];
+        $count = Register::where('round', $round)->count();
+
+        return view('backend.dashboard', ['current' => $count]);
     }
 
     public function getList($id) {
