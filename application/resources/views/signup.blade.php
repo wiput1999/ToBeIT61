@@ -103,8 +103,11 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                             <div class="form-item">
                                 <label>ระดับชั้น: </label>
                                 <select name="degree" required>
+                                    <option value="มัธยมศึกษาปีที่ 4">มัธยมศึกษาปีที่ 4</option>
+                                    <option value="มัธยมศึกษาปีที่ 5">มัธยมศึกษาปีที่ 5</option>
                                     <option value="มัธยมศึกษาปีที่ 6">มัธยมศึกษาปีที่ 6</option>
-                                    <option value="ปวช. ปี3">ปวช. ปี3</option>
+                                    <option value="ปวช.">ปวช.</option>
+                                    <option value="ปวส.">ปวส.</option>
                                 </select>
                             </div>
                         </div>

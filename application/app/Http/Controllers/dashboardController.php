@@ -9,6 +9,7 @@ use App\Models\Config;
 use App\User;
 use Carbon;
 use DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class dashboardController extends Controller
 {
@@ -188,5 +189,16 @@ class dashboardController extends Controller
         }
 
         return redirect('/backend/config');
+    }
+
+    public function getExcel() {
+        return Excel::create('registers_export_' . time(), function($excel)
+        {
+            $excel->sheet('Sheet', function($sheet)
+            {
+                $datas = Register::all();
+                $sheet->loadView('backend.excel', ['datas' => $datas]);
+            });
+        })->download('xls');
     }
 }

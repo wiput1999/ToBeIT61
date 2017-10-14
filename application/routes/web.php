@@ -48,4 +48,6 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/backend/config', 'dashboardController@getConfig');
 
     Route::post('/backend/config', 'dashboardController@doConfig');
+
+    Route::get('/backend/excel', 'dashboardController@getExcel');
 });

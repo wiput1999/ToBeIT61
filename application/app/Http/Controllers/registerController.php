@@ -26,7 +26,7 @@ class registerController extends Controller
             'lastname'              => 'required',
             'nickname'              => 'required',
             'religion'              => 'required',
-            'degree'                => 'required|in:มัธยมศึกษาปีที่ 6,ปวช. ปี3',
+            'degree'                => 'required|in:มัธยมศึกษาปีที่ 4,มัธยมศึกษาปีที่ 5,มัธยมศึกษาปีที่ 6,ปวช.,ปวส.',
             'school'                => 'required',
             'tel'                   => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'parent'                => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
