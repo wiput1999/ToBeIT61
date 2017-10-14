@@ -519,8 +519,8 @@
                         <i class="fa fa-phone" aria-hidden="true"> </i>  พี่หมี: 086 - 058 - 0919 <br />
                     </div>
                     <div class="col" style="text-align: left; line-height: 1.8;">
-                        <a href="https://www.facebook.com/tobeitkmitl/"><i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook</a> <br />
-                        <a href="https://www.facebook.com/groups/kmitltobeit/"><i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook</a> <br />
+                        <a href="https://www.facebook.com/tobeitkmitl/" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i> เพจ ToBeIT บน Facebook</a> <br />
+                        <a href="https://www.facebook.com/groups/kmitltobeit/" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> กลุ่ม ToBeIT@KMITL บน Facebook</a> <br />
                         {{--<a href="#"><i class="fa fa-weixin" aria-hidden="true"></i> ส่งข้อความผ่าน Facebook</a> <br />--}}
                     </div>
                 </div>

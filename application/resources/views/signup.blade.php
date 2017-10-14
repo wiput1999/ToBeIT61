@@ -122,13 +122,13 @@ Y8a     a8P  88  "8a,   ,d88  88       88  "8a,   ,a88  88b,   ,a8"
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>เบอร์โทรศัพท์: </label>
-                                <input type="text" name="tel" placeholder="เช่น 0818888888 ไม่ต่องมี่ -" required>
+                                <input type="text" name="tel" placeholder="เช่น 0818888888 ไม่ต่องมี -" required>
                             </div>
                         </div>
                         <div class="col col-4">
                             <div class="form-item">
                                 <label>เบอร์โทรศัพท์ผู้ปกครอง: </label>
-                                <input type="text" name="parent" placeholder="เช่น 0818888888 ไม่ต่องมี่ -" required>
+                                <input type="text" name="parent" placeholder="เช่น 0818888888 ไม่ต่องมี -" required>
                                 <div class="desc">สำหรับติดต่อผู้ปกครอง กรณีเกิดเหตุฉุกเฉิน</div>
                             </div>
                         </div>
