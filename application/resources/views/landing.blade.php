@@ -7,7 +7,7 @@
         {{-- Home --}}
 
         <div class="_home section" id="home">
-            <img src="{{ asset('/images/home_logo_re.png')}}" />
+            <img src="{{ asset('/images/home_logo_re.png') }}" />
         </div>
         <hr />
 
@@ -27,6 +27,11 @@
                 </div>
                 <div class="layout-footer">
                     <br />
+
+                    <a href="/signup" class="download" style="text-align: center;">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        ลงทะเบียน!
+                    </a>
                 </div>
             </div>
         </div>
@@ -439,24 +444,26 @@
                 <div class="layout-title">
                     <span class="head">PHOTOS</span> | ภาพกิจกรรม
                 </div>
-                <div class="slider">
-                    <div class="slider-wrap">
-                        <div class="arrow">
-                            <i class="fa fa-angle-left" aria-hidden="true" class="prev"></i>
-                            <i class="fa fa-angle-right" aria-hidden="true" class="next"></i>
-                        </div>
-                        <img id="1" src="{{asset('images/photos/01.png')}}" class="active" />
-                        <img id="2" src="{{asset('images/photos/02.png')}}" />
-                        <img id="3" src="{{asset('images/photos/03.png')}}" />
-                        <img id="4" src="{{asset('images/photos/04.png')}}" />
-                        <img id="5" src="{{asset('images/photos/05.png')}}" />
-                        <img id="6" src="{{asset('images/photos/06.png')}}" />
-                        <img id="7" src="{{asset('images/photos/07.png')}}" />
-                        <img id="8" src="{{asset('images/photos/08.png')}}" />
-                        <img id="9" src="{{asset('images/photos/09.png')}}" />
-                        <img id="10" src="{{asset('images/photos/10.png')}}" />
-                    </div>
+                <div class="Wallop">
+                      <div class="Wallop-list">
+                        <div class="Wallop-item"><img src="{{asset('image/photos/01.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('image/photos/02.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('image/photos/03.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('image/photos/04.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('image/photos/05.png')}}"></div>
+                      </div>
+
+                      <button class="arrow fa fa-angle-left Wallop-buttonPrevious"></button>
+                      <button class="arrow fa fa-angle-right Wallop-buttonNext"></button>
                 </div>
+
+                {{ HTML::script('wallop/js/Wallop.min.js') }}
+                <script>
+                  // New instance of Wallop
+                  var slider = document.querySelector('.Wallop');
+                  var Wallop = new Wallop(slider);
+                </script>
+
                 <br /><hr class="hr2"/>
             </div>
 
