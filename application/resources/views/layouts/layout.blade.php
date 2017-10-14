@@ -2,12 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="google" content="notranslate" />
-        <meta name="description" content="@lang('meta.description')" />
+        <meta name="description" content="โครงการTobeIT’61 คือค่ายติวที่จะพาน้องๆไปรู้จักกับคณะเทคโนโลยีสารสนเทศ ลาดกระบังให้มากขึ้น" />
+        <meta name="author" content="ToBeIT'61 KMITL"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:author" content="https://www.facebook.com/ACPowerParty"/>
+        <meta property="og:image" content="{{ URL('/images/og_image.png') }}"/>
+        <meta property="og:url" content="http://tobe.it.kmitl.ac.th/"/>
         <link rel="shortcut icon" href="{{url('/favicon.png')}}" type="image/x-icon"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 

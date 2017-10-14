@@ -445,11 +445,16 @@
                 </div>
                 <div class="Wallop">
                       <div class="Wallop-list">
-                        <div class="Wallop-item"><img src="{{asset('images/photos/01.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/02.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/03.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/04.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/05.png')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/01.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/02.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/03.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/04.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/05.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/06.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/07.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/08.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/09.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/10.jpg')}}"></div>
                       </div>
 
                       <button class="arrow fa fa-angle-left Wallop-buttonPrevious"></button>
