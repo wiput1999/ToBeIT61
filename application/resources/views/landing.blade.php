@@ -14,7 +14,6 @@
 
 
         {{-- About --}}
-
         <div class="_about" id="about">
             <div class="layout-box">
                 <div class="layout-title">
@@ -22,13 +21,13 @@
                 </div>
                 <div class="layout-content">
                     <p class="textbox">
-                        โครงการ ToBeIT คือค่ายติวที่จะพาน้องๆ มารู้จักเกี่ยวกับไอทีให้มากขึ้น ซึ่งโครงการนี้จะสอนน้อง ๆ เกี่ยวกับหลักการทางด้านไอทีต่าง ๆ ไม่ว่าจะเป็น ฮาร์ดแวร์ ซอฟต์แวร์ ระบบฐานข้อมูล และพื้นฐานทางด้านไอที โดยที่กล่าวมาในข้างต้นนั้นจะมีพี่ ๆ คอยสอนน้องตลอดโครงการ น้อง ๆ สามารถนำความรู้ที่ได้จากโครงการไปต่อยอดได้ในหลายแขนงหรือในด้านต่าง ๆ โดยที่โครงการนี้ถูกจัดตั้งโดย คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                        โครงการTobeIT’61 คือค่ายติวที่จะพาน้องๆไปรู้จักกับคณะเทคโนโลยีสารสนเทศ ลาดกระบังให้มากขึ้น ทั้งเนื้อหาสาระเตรียมตัวสำหรับการสอบเข้าทางด้านไอทีอย่างตรงจุด จากพวกพี่ๆภายในคณะโดย เราจะมีการจำลองการสอบ, การสัมภาษณ์ และการแนะนำการทำportfolioสำหรับน้องๆที่มาภายในงาน พร้อมทั้งสัมผัสบรรยากาศการเรียน และความอบอุ่นภายในคณะ โดยโครงการนี้ถูกจัดตั้งโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
                     </p>
                 </div>
                 <div class="layout-footer">
                     <br />
 
-                    <a href="/signup" class="download" style="text-align: center;">
+                    <a href="{{ URL('/signup') }}" class="download" style="text-align: center;">
                         <i class="fa fa-id-card-o" aria-hidden="true"></i>
                         ลงทะเบียน!
                     </a>
@@ -336,7 +335,7 @@
                                     {{-- <hr class="hr2 small radius"/> --}}
                                 </li>
                                 <li>
-                                    - เริ่มจากเส้นทางตลาดมีนบุรี เข้าถนนสุวินทวงศ์ ถนนบึงบัว ถนนฉลองกรุง
+                                    - เริ่มจากเส้นทางตลาดมีนบุรี เข้าถนนสุวินทวงศ์ ถนนคุ้มเกล้า หรือถนนฉลองกรุง
                                     {{-- <hr class="hr2 small radius"/> --}}
                                 </li>
                                 <li>
@@ -446,18 +445,18 @@
                 </div>
                 <div class="Wallop">
                       <div class="Wallop-list">
-                        <div class="Wallop-item"><img src="{{asset('image/photos/01.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('image/photos/02.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('image/photos/03.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('image/photos/04.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('image/photos/05.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('images/photos/01.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('images/photos/02.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('images/photos/03.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('images/photos/04.png')}}"></div>
+                        <div class="Wallop-item"><img src="{{asset('images/photos/05.png')}}"></div>
                       </div>
 
                       <button class="arrow fa fa-angle-left Wallop-buttonPrevious"></button>
                       <button class="arrow fa fa-angle-right Wallop-buttonNext"></button>
                 </div>
 
-                {{ HTML::script('wallop/js/Wallop.min.js') }}
+                <script src="{{ mix('/2017/js/Wallop.min.js') }}"></script>
                 <script>
                   // New instance of Wallop
                   var slider = document.querySelector('.Wallop');

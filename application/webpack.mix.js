@@ -27,3 +27,4 @@ mix.copy("node_modules/popper.js/dist/umd/popper.min.js", "public/2017/js");
 mix.copy("node_modules/list.js/dist/list.min.js", "public/2017/js");
 mix.copy("resources/assets/js/kube.min.js", "public/2017/js");
 mix.copy("resources/assets/js/jquery-ui.js", "public/2017/js");
+mix.copy("resources/assets/js/Wallop.min.js", "public/2017/js");
