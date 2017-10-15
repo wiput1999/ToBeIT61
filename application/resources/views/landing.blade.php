@@ -97,7 +97,7 @@
                             &nbsp; <hr class="hr2 small"/>
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 วันสุดท้าย <hr class="hr2 small"/>
+                            กิจกรรม ToBeIT61 วันสุดท้าย <hr class="hr2 small"/>
                         </div>
                     </div>
 
