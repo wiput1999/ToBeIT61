@@ -28,12 +28,16 @@ class CreateRegisterTable extends Migration
             $table->string('food');
             $table->string('line');
             $table->string('facebook');
-            $table->enum('appointment', [1, 2, 3, 4, 5]);
+            $table->enum('appointment', [0, 1, 2, 3, 4, 5]);
             $table->string('parent',10);
             $table->boolean('exam');
+            $table->boolean('walkin')->default(0);
             $table->enum('round', [1, 2, 3]);
             $table->timestamp('saturday')->nullable();
             $table->timestamp('sunday')->nullable();
+            $table->timestamp('saturday_checkout')->nullable();
+            $table->timestamp('sunday_checkout')->nullable();
+
             $table->timestamps();
         });
     }

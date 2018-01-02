@@ -47,10 +47,10 @@
                 @if($data->appointment == 3)
                     สถานีรถไฟหัวตะเข้
                 @endif
-                @if($data->appointment == 3)
+                @if($data->appointment == 4)
                     หน้าคณะ IT
                 @endif
-                @if($data->appointment == 3)
+                @if($data->appointment == 5)
                     วินรถตู้
                 @endif
             </td>

@@ -67,9 +67,18 @@ class registerController extends Controller
             return redirect('/signup')->withInput()->withErrors($validator);
         }
 
+        $duplicate = Register::where([
+            ['tel', '=', $inputs['tel']],
+            ['email', '=', $inputs['email']]
+        ])->count();
+
         $round = Config::where('key', 'REGISTER_ROUND')->get()[0]['value'];
         $limit = Config::where('key', 'REGISTER_ROUND_LIMIT')->get()[0]['value'];
         $count = Register::where('round', $round)->count();
+
+        if ($duplicate > 0) {
+            return view('signup', ['success' => 1, 'limit' => $limit, 'count' => $count]);
+        }
 
         if ($count >= $limit) {
             return redirect('/signup');

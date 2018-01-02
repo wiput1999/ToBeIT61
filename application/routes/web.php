@@ -50,4 +50,32 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/backend/config', 'dashboardController@doConfig');
 
     Route::get('/backend/excel', 'dashboardController@getExcel');
+
+    Route::get('/backend/excel/register', 'dashboardController@getExcelRegister');
+
+    Route::get('/backend/excel/walkin', 'dashboardController@getExcelWalkin');
+
+    Route::get('/backend/excel/saturday', 'dashboardController@getExcelSaturday');
+
+    Route::get('/backend/excel/sunday', 'dashboardController@getExcelSunday');
+
+    Route::get('/backend/visitor', 'dashboardController@getVisitor');
+
+    Route::get('/backend/visitor/new', 'dashboardController@getVisitorForm');
+
+    Route::post('/backend/visitor/new', 'dashboardController@doSaveVisitor');
+
+    Route::delete('/backend/visitor/delete/{id}', 'dashboardController@doDeleteVisitor');
+
+    Route::get('/backend/walkin/new', 'dashboardController@getWalkinForm');
+
+    Route::post('/backend/walkin/new', 'dashboardController@doSaveWalkin');
+
+    Route::get('/backend/walkin/{id}', 'dashboardController@getWalkin');
+
+    Route::get('/backend/checkout/{id}', 'dashboardController@getCheckoutList');
+
+    Route::post('/backend/checkout/saturday/{id}', 'dashboardController@doCheckoutSaturday');
+
+    Route::post('/backend/checkout/sunday/{id}', 'dashboardController@doCheckoutSunday');
 });
