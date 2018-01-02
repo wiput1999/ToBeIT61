@@ -53,6 +53,30 @@
     }
 }
 
+
+.form-close {
+    border: 1px solid $red1;
+    padding: 5%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    color: $red1;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: $white1;
+
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        padding: 5px;
+        list-style-type: disc;
+    }
+
+}
+
+
 .form-success {
     border: 1px solid $green2;
     padding: 5%;

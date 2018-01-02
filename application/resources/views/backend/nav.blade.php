@@ -11,11 +11,32 @@
             <li class="nav-item {{ \Request::is('backend/list/1') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('/backend/list/1') }}">Round 1</a>
             </li>
-            <li class="nav-item {{ \Request::is('backend/list/2') ? 'active':'' }}">
-                <a class="nav-link" href="{{ url('/backend/list/2') }}">Round 2</a>
+            {{--<li class="nav-item {{ \Request::is('backend/list/2') ? 'active':'' }}">--}}
+                {{--<a class="nav-link" href="{{ url('/backend/list/2') }}">Round 2</a>--}}
+            {{--</li>--}}
+            {{--<li class="nav-item {{ \Request::is('backend/list/3') ? 'active':'' }}">--}}
+                {{--<a class="nav-link" href="{{ url('/backend/list/3') }}">Round 3</a>--}}
+            {{--</li>--}}
+            <li class="nav-item {{ \Request::is('backend/walkin/1') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/walkin/1') }}">Walk-in Round 1</a>
             </li>
-            <li class="nav-item {{ \Request::is('backend/list/3') ? 'active':'' }}">
-                <a class="nav-link" href="{{ url('/backend/list/3') }}">Round 3</a>
+            {{--<li class="nav-item {{ \Request::is('backend/walkin/2') ? 'active':'' }}">--}}
+                {{--<a class="nav-link" href="{{ url('/backend/walkin/2') }}">Walk-in Round 2</a>--}}
+            {{--</li>--}}
+            {{--<li class="nav-item {{ \Request::is('backend/walkin/3') ? 'active':'' }}">--}}
+                {{--<a class="nav-link" href="{{ url('/backend/walkin/3') }}">Walk-in Round 3</a>--}}
+            {{--</li>--}}
+            <li class="nav-item {{ \Request::is('backend/walkin/new') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/walkin/new') }}">Add Walk-in</a>
+            </li>
+            <li class="nav-item {{ \Request::is('backend/visitor') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/visitor') }}">Visitors</a>
+            </li>
+            <li class="nav-item {{ \Request::is('backend/visitor/new') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/visitor/new') }}">Add Visitor</a>
+            </li>
+            <li class="nav-item {{ \Request::is('backend/checkout/1') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('/backend/checkout/1') }}">Checkout 1</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

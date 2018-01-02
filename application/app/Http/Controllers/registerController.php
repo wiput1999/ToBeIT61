@@ -26,7 +26,7 @@ class registerController extends Controller
             'lastname'              => 'required',
             'nickname'              => 'required',
             'religion'              => 'required',
-            'degree'                => 'required|in:มัธยมศึกษาปีที่ 6,ปวช. ปี3',
+            'degree'                => 'required|in:มัธยมศึกษาปีที่ 4,มัธยมศึกษาปีที่ 5,มัธยมศึกษาปีที่ 6,ปวช.,ปวส.',
             'school'                => 'required',
             'tel'                   => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
             'parent'                => 'required|regex:/^0[0-9]{1,2}[0-9]{7}$/',
@@ -67,9 +67,18 @@ class registerController extends Controller
             return redirect('/signup')->withInput()->withErrors($validator);
         }
 
+        $duplicate = Register::where([
+            ['tel', '=', $inputs['tel']],
+            ['email', '=', $inputs['email']]
+        ])->count();
+
         $round = Config::where('key', 'REGISTER_ROUND')->get()[0]['value'];
         $limit = Config::where('key', 'REGISTER_ROUND_LIMIT')->get()[0]['value'];
         $count = Register::where('round', $round)->count();
+
+        if ($duplicate > 0) {
+            return view('signup', ['success' => 1, 'limit' => $limit, 'count' => $count]);
+        }
 
         if ($count >= $limit) {
             return redirect('/signup');

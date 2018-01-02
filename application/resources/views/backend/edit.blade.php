@@ -147,6 +147,7 @@
                     <label for="appointment" class="col-sm-5 col-form-label">จุดนัดพบ : </label>
                     <div class="col-sm-7">
                         <select class="custom-select" id="appointment" name="appointment">
+                            <option value="0" {{  ($data['appointment'] == 0 ? "selected":"") }}>Walk-in</option>
                             <option value="1" {{  ($data['appointment'] == 1 ? "selected":"") }}>Airport Rail Link ลาดกระบัง</option>
                             <option value="2" {{  ($data['appointment'] == 2 ? "selected":"") }}>สนามบินสุวรรณภูมิ</option>
                             <option value="3" {{  ($data['appointment'] == 3 ? "selected":"") }}>สถาณีรถไฟหัวตะเข้</option>

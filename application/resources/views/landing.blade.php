@@ -58,7 +58,7 @@
 
                     <div class="row">
                         <div class="col col-5">
-                            14 ตุลาคม 2560
+                            16 ตุลาคม 2560 15:00
                         </div>
                         <div class="col col-7">
                             เปิดการลงทะเบียนกิจกรรม ToBeIT61 โดยสามารถลงทะเบียนได้ที่ลิงค์นี้เลย <a href="{{ URL('/signup') }}">ลงทะเบียน</a> <hr class="small"/>
@@ -67,7 +67,7 @@
 
                     <div class="row">
                         <div class="col col-5">
-                            25 ตุลาคม 2560
+                            24 ตุลาคม 2560 23:59
                         </div>
                         <div class="col col-7">
                             ปิดการลงลงทะเบียนกิจกรรม ToBeIT61 <hr class="small"/>
@@ -79,7 +79,7 @@
                             28 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 วันแรก <hr class="small"/>
+                            กิจกรรม ToBeIT61 วันแรก <hr class="small"/>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@
                             29 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 Pre Examination
+                            กิจกรรม ToBeIT61 Pre Examination
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@
                             &nbsp; <hr class="hr2 small"/>
                         </div>
                         <div class="col col-7">
-                            กิจกรรม ToBeIT60 วันสุดท้าย <hr class="hr2 small"/>
+                            กิจกรรม ToBeIT61 วันสุดท้าย <hr class="hr2 small"/>
                         </div>
                     </div>
 
@@ -131,19 +131,19 @@
 
                     <div class="row">
                         <div class="col col-5">
-                            28 ตุลาคม 2560
+                            28 ตุลาคม 2560 <hr class="small"/>
                         </div>
                         <div class="col col-7">
-                            Logic (P’Gun, P’Khing, P'Dew, P'Nut) <hr class="small"/>
+                            Flowchart (P’Cartoon, P’Fluke, P'Phee, P'Diff) <hr class="small"/>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col col-5">
-                            29 ตุลาคม 2560 <hr class="small"/>
+                            29 ตุลาคม 2560
                         </div>
                         <div class="col col-7">
-                            Flowchart (P’Cartoon, P’Fluke, P'Pee, P'Diff) <hr class="small"/>
+                            CTS (P’Gun, P’Khing, P'Dew, P'Nut) <hr class="small"/>
                         </div>
                     </div>
 
@@ -191,7 +191,7 @@
                             <i class="fa fa-address-book" aria-hidden="true"></i> พี่ประจำวิชา <br />
                             - พี่การ์ตูน (P’Cartoon) <br />
                             - พี่ฟลุ๊ค (P’Fluke) <br />
-                            - พี่พี (P’Pee) <br />
+                            - พี่พี (P’Phee) <br />
                             - พี่ดิฟ (P’Diff) <br />
                             <br/><hr  class="hr2 small"/>
                         </div>
@@ -204,11 +204,6 @@
 
 
                     <div class="col col-6">
-
-                        {{-- <br />
-                        <div class="download">
-                            คิดวิเคราะห์ เชิงประยุกค์
-                        </div> --}}
 
                         <br />
                         <abbr title="คิดวิเคราะห์ เชิงประยุกค์">
@@ -445,11 +440,14 @@
                 </div>
                 <div class="Wallop">
                       <div class="Wallop-list">
-                        <div class="Wallop-item"><img src="{{asset('images/photos/01.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/02.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/03.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/04.png')}}"></div>
-                        <div class="Wallop-item"><img src="{{asset('images/photos/05.png')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/01.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/02.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/03.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/04.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/05.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/06.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/07.jpg')}}"></div>
+                          <div class="Wallop-item"><img src="{{asset('images/photos/08.jpg')}}"></div>
                       </div>
 
                       <button class="arrow fa fa-angle-left Wallop-buttonPrevious"></button>
@@ -515,7 +513,7 @@
 
                 <div class="row around">
                     <div class="col" style="text-align: left; line-height: 1.8;">
-                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่เซนท์: 086 - 086 - 4192 <br />
+                        <i class="fa fa-phone" aria-hidden="true"> </i>  พี่เซ้นท์: 086 - 086 - 4192 <br />
                         <i class="fa fa-phone" aria-hidden="true"> </i>  พี่หมี: 086 - 058 - 0919 <br />
                     </div>
                     <div class="col" style="text-align: left; line-height: 1.8;">
